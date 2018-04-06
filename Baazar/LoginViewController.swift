@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
         
         guard let username = UserLabel.text
             else{
-                print("please input a username")
+                print("please input a uername")
                 return
         }
         
