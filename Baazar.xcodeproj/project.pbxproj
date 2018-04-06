@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BFF12F42059A1AD007AE5F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFF12F32059A1AD007AE5F0 /* AppDelegate.swift */; };
-		1BFF12F62059A1AD007AE5F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFF12F52059A1AD007AE5F0 /* ViewController.swift */; };
+		1BFF12F62059A1AD007AE5F0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFF12F52059A1AD007AE5F0 /* LoginViewController.swift */; };
 		1BFF12F92059A1AD007AE5F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFF12F72059A1AD007AE5F0 /* Main.storyboard */; };
 		1BFF12FB2059A1AD007AE5F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BFF12FA2059A1AD007AE5F0 /* Assets.xcassets */; };
 		1BFF12FE2059A1AD007AE5F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFF12FC2059A1AD007AE5F0 /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		1BFF12F02059A1AD007AE5F0 /* Baazar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baazar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFF12F32059A1AD007AE5F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BFF12F52059A1AD007AE5F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BFF12F52059A1AD007AE5F0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1BFF12F82059A1AD007AE5F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BFF12FA2059A1AD007AE5F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BFF12FD2059A1AD007AE5F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				1BFF12F32059A1AD007AE5F0 /* AppDelegate.swift */,
-				1BFF12F52059A1AD007AE5F0 /* ViewController.swift */,
+				1BFF12F52059A1AD007AE5F0 /* LoginViewController.swift */,
 				1BFF12F72059A1AD007AE5F0 /* Main.storyboard */,
 				1BFF12FA2059A1AD007AE5F0 /* Assets.xcassets */,
 				1BFF12FC2059A1AD007AE5F0 /* LaunchScreen.storyboard */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BFF12F62059A1AD007AE5F0 /* ViewController.swift in Sources */,
+				1BFF12F62059A1AD007AE5F0 /* LoginViewController.swift in Sources */,
 				1BFF12F42059A1AD007AE5F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +503,7 @@
 				1BFF131A2059A1AD007AE5F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BFF131B2059A1AD007AE5F0 /* Build configuration list for PBXNativeTarget "BaazarTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +512,7 @@
 				1BFF131D2059A1AD007AE5F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BFF131E2059A1AD007AE5F0 /* Build configuration list for PBXNativeTarget "BaazarUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +521,7 @@
 				1BFF13202059A1AD007AE5F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
