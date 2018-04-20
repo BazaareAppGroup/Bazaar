@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Category View Controller-->
         <scene sceneID="OzM-yW-HnO">
             <objects>
-                <viewController id="3WK-jY-e3A" sceneMemberID="viewController">
+                <viewController id="3WK-jY-e3A" customClass="CategoryViewController" customModule="Baazar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MpE-7r-XAf"/>
                         <viewControllerLayoutGuide type="bottom" id="NXa-Le-hcD"/>
@@ -80,7 +80,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QNG-1m-fhY">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QNG-1m-fhY" customClass="CategoryCollectionViewCell" customModule="Baazar" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="170" height="160"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -98,6 +98,9 @@
                                         </view>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.35167331560283688" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.92001390706806285" green="0.92001390706806285" blue="0.92001390706806285" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="CategoryLabel" destination="9Do-3w-YQD" id="CTp-UO-gNS"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -116,6 +119,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Gis-yJ-i4n"/>
                     <connections>
+                        <outlet property="searchBar" destination="Qxi-Ug-zzh" id="RNp-Kr-MBk"/>
                         <segue destination="f6W-tr-ehk" kind="show" id="QCO-dx-111"/>
                     </connections>
                 </viewController>
