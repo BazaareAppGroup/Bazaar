@@ -4,7 +4,9 @@
 //
 //  Created by David King on 3/14/18.
 //  Copyright © 2018 David King. All rights reserved.
-//
+
+//TO-DO create function to sign user up/in using the PARSE database
+//TO-DO create alerts if there is error when signing up
 
 import UIKit
 
@@ -34,7 +36,8 @@ class LoginViewController: UIViewController {
         if (valid == true) // executes if sign in is a success
         {
             
-            performSegue(withIdentifier: "LoginSuccess", sender: self)
+            print("sign in valid")
+            performSegue(withIdentifier: "LoginSuccess", sender: nil)
         }
         
     }

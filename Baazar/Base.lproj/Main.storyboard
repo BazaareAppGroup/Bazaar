@@ -82,7 +82,7 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
-        <!--Category View Controller-->
+        <!--Categories-->
         <scene sceneID="OzM-yW-HnO">
             <objects>
                 <viewController id="3WK-jY-e3A" customClass="CategoryViewController" customModule="Baazar" customModuleProvider="target" sceneMemberID="viewController">
@@ -94,58 +94,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search for Service" translatesAutoresizingMaskIntoConstraints="NO" id="f4I-Mx-VMf">
-                                <frame key="frameInset" minY="20" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <searchBar contentMode="redraw" fixedFrame="YES" placeholder="search for services" translatesAutoresizingMaskIntoConstraints="NO" id="Qxi-Ug-zzh">
                                 <frame key="frameInset" minY="83" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MCh-Dn-Bmp">
-                                <frame key="frameInset" minY="127" width="375" height="532"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WPF-lM-VOf">
+                                <frame key="frameInset" minY="127" width="375" height="540"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K87-cV-Pcn">
-                                    <size key="itemSize" width="164" height="163"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryView" id="QNG-1m-fhY" customClass="CategoryCollectionViewCell" customModule="Baazar" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="164" height="163"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="164" height="163"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryTableViewCell" rowHeight="64" id="fID-g9-D3K" customClass="CategoryTableViewCell" customModule="Baazar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fID-g9-D3K" id="deq-ao-PNI">
+                                            <frame key="frameInset" width="375" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Do-3w-YQD">
-                                                    <frame key="frameInset" minX="50" minY="70" width="71" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2b-lf-uSI">
+                                                    <frame key="frameInset" minX="152" minY="20" width="71" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                        </view>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.35167331560283688" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="tintColor" red="0.92001390706806285" green="0.92001390706806285" blue="0.92001390706806285" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="CategoryLabel" destination="9Do-3w-YQD" id="CTp-UO-gNS"/>
+                                            <outlet property="CategoryLabel" destination="a2b-lf-uSI" id="bYn-EX-IxT"/>
                                         </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Gis-yJ-i4n"/>
+                    <navigationItem key="navigationItem" title="Categories" id="Gis-yJ-i4n"/>
                     <connections>
-                        <outlet property="collectionView" destination="MCh-Dn-Bmp" id="EZf-mx-itY"/>
-                        <outlet property="searchBar" destination="Qxi-Ug-zzh" id="RNp-Kr-MBk"/>
+                        <outlet property="TableView" destination="WPF-lM-VOf" id="7ho-ac-JHx"/>
+                        <outlet property="searchBar" destination="Qxi-Ug-zzh" id="OO1-kW-cj7"/>
                         <segue destination="f6W-tr-ehk" kind="show" id="QCO-dx-111"/>
                     </connections>
                 </viewController>
@@ -174,7 +161,7 @@
                                         <rect key="frame" x="0.0" y="92" width="375" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0ZF-5S-7Gb" id="n0D-7O-5Y7">
-                                            <frame key="frameInset" width="375" height="104.5"/>
+                                            <frame key="frameInset" width="375" height="104"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ubC-jK-66F">
