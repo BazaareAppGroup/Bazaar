@@ -8,11 +8,14 @@
 
 import UIKit
 
-class CategoryViewController: UIViewController, UISearchBarDelegate {
-
-  
+class CategoryViewController: UIViewController, UISearchBarDelegate, UICollectionViewDataSource {
+// change to table view maybe
+    
+    var categories: [String] = ["a","d","d"] // array will be filled with names of categories
+    
     @IBOutlet weak var searchBar: UISearchBar!
     
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +23,45 @@ class CategoryViewController: UIViewController, UISearchBarDelegate {
         searchBar.delegate = self
         
         // Do any additional setup after loading the view.
+        
+        collectionView.dataSource = self
+        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        
+        layout.minimumInteritemSpacing = 3
+        
+        layout.minimumLineSpacing = layout.minimumInteritemSpacing
+        
+        let cellsPerLine:CGFloat  = 3
+        
+        let interItemSpacingTotal = layout.minimumInteritemSpacing * (cellsPerLine - 1)
+        
+        let width = collectionView.frame.size.width / cellsPerLine - interItemSpacingTotal / cellsPerLine
+        
+        layout.itemSize = CGSize(width: width, height: width * 3 / 2)
+        
+
     }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
+    
+        return categories.count
+    }
+    
+   
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryView", for: indexPath) as! CategoryCollectionViewCell
+        
+        let category = categories[indexPath.item]
+        
+        cell.CategoryLabel.text = category
+        
+        return cell
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

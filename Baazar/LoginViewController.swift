@@ -11,44 +11,54 @@ import UIKit
 class LoginViewController: UIViewController {
     
     
-    @IBOutlet weak var UserLabel: UITextField!
-    
-    @IBOutlet weak var PasswordLabel: UITextField!
-    
+   
+    @IBOutlet weak var UsernameText: UITextField!
     
     
+    @IBOutlet weak var PasswordText: UITextField!
     
     
-    @IBAction func SignInButton(_ sender: AnyObject) {
-        //Sign user in if user doesnt exist have alert tell user sign in error
+    
+    @IBAction func SignInClicked(_ sender: AnyObject) {
+      // print("Username \(UsernameText.text!)")
+        var valid: Bool = true // this is to be changed if parse sign in executes succesfully
         
-        guard let username = UserLabel.text
-            else{
-                print("please input a uername")
-                return
+        if (UsernameText.text! == "" || PasswordText.text! == ""){
+            print("Sign In Error")
+            valid = false
+            
         }
         
-        guard let password = PasswordLabel.text
-            else{
-                print("please input a password")
-                return
+    
+        
+        if (valid == true) // executes if sign in is a success
+        {
+            
+            performSegue(withIdentifier: "LoginSuccess", sender: self)
         }
-        
-        //sign in
-        //add functionality
-        //facts
-        
         
     }
-
     
-    @IBAction func SignUpButton(_ sender: AnyObject) {
-        //check to see if user or password exists in database 
-        //if not then sign up is a success if so then alert 
-        //tells hijm sign up error
+    
+    @IBAction func SignUpClicked(_ sender: AnyObject) {
+        
+        var valid: Bool = true // this is to be changed if parse sign in executes succesfully
+        
+        if (UsernameText.text! == "" || PasswordText.text! == ""){
+            print("Sign Up Error")
+            valid = false
+            
+        }
         
         
         
+        if (valid == true) // executes if sign in is a success
+        {
+            
+            performSegue(withIdentifier: "LoginSuccess", sender: self)
+        }
+        
+
     }
     
     
@@ -62,6 +72,29 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    func alert(Title: String, Message: String){
+        
+        let alertController = UIAlertController(title: Title, message: Message, preferredStyle: .alert)
+        
+        var okAction = UIAlertAction(title: "OK", style: .cancel) { (action) in
+            // handle case of user logging out
+        }
+        // add the logout action to the alert controller
+        alertController.addAction(okAction)
+        
+        present(alertController, animated: true) {
+            // optional code for what happens after the alert controller has finished presenting
+        }
+        
+        
+        
+        
+        
+    }
+
 
 
 }
