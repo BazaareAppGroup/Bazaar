@@ -77,7 +77,7 @@ class LoginViewController: UIViewController {
     }
     
     
-    
+    // can be called to let user know of a login or sign up error
     func alert(Title: String, Message: String){
         
         let alertController = UIAlertController(title: Title, message: Message, preferredStyle: .alert)
