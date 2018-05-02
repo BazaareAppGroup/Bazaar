@@ -26,7 +26,10 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func SignInClicked(_ sender: AnyObject) {
-        // print("Username \(UsernameText.text!)")
+        
+        let username = UsernameText.text ?? ""
+        let password = PasswordText.text ?? ""
+        
         var valid: Bool = loginUser(username: username, password: password) // this is to be changed if parse sign in executes succesfully
 
             if (UsernameText.text! == "" || PasswordText.text! == ""){
