@@ -79,16 +79,21 @@
                                             <constraint firstItem="bTY-Cu-CEE" firstAttribute="height" secondItem="IhJ-Mz-dHi" secondAttribute="height" id="wYl-vq-9zn"/>
                                         </constraints>
                                     </view>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="lwd-GF-HFq">
+                                        <rect key="frame" x="169" y="305" width="37" height="37"/>
+                                    </activityIndicatorView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.20924798696319019" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Cf2-ox-I8t" firstAttribute="centerX" secondItem="pYp-iR-kdm" secondAttribute="centerX" id="2dj-4q-6v5"/>
                                     <constraint firstItem="cZm-07-kep" firstAttribute="top" secondItem="pYp-iR-kdm" secondAttribute="bottom" multiplier="1:4" constant="-26.375" id="2mR-20-M5S"/>
                                     <constraint firstItem="cZm-07-kep" firstAttribute="centerX" secondItem="pYp-iR-kdm" secondAttribute="centerX" id="7le-qc-oiL"/>
                                     <constraint firstItem="Cf2-ox-I8t" firstAttribute="top" secondItem="jXE-bR-2Mc" secondAttribute="bottom" constant="10" id="GKu-ZC-UYg"/>
+                                    <constraint firstItem="lwd-GF-HFq" firstAttribute="centerY" secondItem="pYp-iR-kdm" secondAttribute="centerY" id="IIA-vf-51g"/>
                                     <constraint firstItem="IhJ-Mz-dHi" firstAttribute="centerX" secondItem="pYp-iR-kdm" secondAttribute="centerX" id="Jdb-j6-Vwh"/>
                                     <constraint firstItem="Cf2-ox-I8t" firstAttribute="centerX" secondItem="jXE-bR-2Mc" secondAttribute="centerX" id="Q0O-nU-BSx"/>
                                     <constraint firstItem="IhJ-Mz-dHi" firstAttribute="top" secondItem="Cf2-ox-I8t" secondAttribute="bottom" constant="10" id="SG1-DI-9eu"/>
+                                    <constraint firstItem="lwd-GF-HFq" firstAttribute="centerX" secondItem="pYp-iR-kdm" secondAttribute="centerX" id="blW-Ug-65P"/>
                                     <constraint firstItem="jXE-bR-2Mc" firstAttribute="width" secondItem="pYp-iR-kdm" secondAttribute="width" multiplier="1:3" constant="73.75" id="iId-ID-XQ0"/>
                                     <constraint firstItem="Cf2-ox-I8t" firstAttribute="width" secondItem="jXE-bR-2Mc" secondAttribute="width" id="jlc-tK-KZa"/>
                                     <constraint firstItem="jXE-bR-2Mc" firstAttribute="top" secondItem="cZm-07-kep" secondAttribute="bottom" constant="10" id="jyd-K8-N0t"/>
@@ -110,8 +115,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="PasswordText" destination="Cf2-ox-I8t" id="B7d-46-Tgx"/>
-                        <outlet property="UsernameText" destination="jXE-bR-2Mc" id="6pf-Fx-NsO"/>
+                        <outlet property="PasswordText" destination="Cf2-ox-I8t" id="fMh-SV-e96"/>
+                        <outlet property="UsernameText" destination="jXE-bR-2Mc" id="AAR-r5-Rws"/>
+                        <outlet property="activityIndicator" destination="lwd-GF-HFq" id="aD0-X9-fcA"/>
                         <segue destination="0IC-Tn-kgl" kind="show" identifier="LoginSuccess" id="iPq-bx-zJU"/>
                     </connections>
                 </viewController>

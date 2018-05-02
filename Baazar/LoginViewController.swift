@@ -15,14 +15,7 @@ import Parse
 
 class LoginViewController: UIViewController {
     
-    
-    
-
-    @IBOutlet weak var usernameLabel: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
-    
-    @IBOutlet weak var passwordLabel: UITextField!
 
     @IBOutlet weak var UsernameText: UITextField!
     
@@ -34,10 +27,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func SignInClicked(_ sender: AnyObject) {
         // print("Username \(UsernameText.text!)")
-        var valid: Bool = true // this is to be changed if parse sign in executes succesfully
-        
-
-        if (usernameLabel.text! == "" || passwordLabel.text! == ""){
+        var valid: Bool = loginUser(username: username, password: password) // this is to be changed if parse sign in executes succesfully
 
             if (UsernameText.text! == "" || PasswordText.text! == ""){
                
@@ -61,13 +51,10 @@ class LoginViewController: UIViewController {
         @IBAction func SignUpClicked(_ sender: AnyObject) {
             
 
-            let username = usernameLabel.text ?? ""
-            let password = passwordLabel.text ?? ""
+            let username = UsernameText.text ?? ""
+            let password = PasswordText.text ?? ""
             
-            var valid: Bool = loginUser(username: username, password: password) // this is to be changed if parse sign in executes succesfully
-            
-           
-                var valid: Bool = true // this is to be changed if parse sign in executes succesfully
+            var valid: Bool =  registerUser(username: username, password: password)// this is to be changed if parse sign in executes succesfully
                 
                 if (UsernameText.text! == "" || PasswordText.text! == ""){
                    
@@ -115,8 +102,8 @@ class LoginViewController: UIViewController {
                 let newUser = PFUser()
                 
                 // set user properties
-                newUser.username = usernameLabel.text ?? ""
-                newUser.password = passwordLabel.text ?? ""
+                newUser.username = UsernameText.text ?? ""
+                newUser.password = PasswordText.text ?? ""
                 
                 
                 
@@ -175,5 +162,5 @@ class LoginViewController: UIViewController {
             
             
             
-    }
 }
+
