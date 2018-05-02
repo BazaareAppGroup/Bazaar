@@ -93,7 +93,7 @@ class LoginViewController: UIViewController {
                     } else {
                         print("User logged in successfully")
                         // display view controller that needs to shown after successful login
-                        self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                        //self.performSegue(withIdentifier: "loginSegue", sender: nil)
                         returnVal = true
                     }
                 }
@@ -108,7 +108,7 @@ class LoginViewController: UIViewController {
                 newUser.username = UsernameText.text ?? ""
                 newUser.password = PasswordText.text ?? ""
                 
-                
+                activityIndicator.startAnimating()
                 
                 // call sign up function on the object
                 newUser.signUpInBackground { (success: Bool, error: Error?) in
@@ -116,10 +116,12 @@ class LoginViewController: UIViewController {
                         print(error.localizedDescription)
                         let alert = UIAlertController(title: nil, message: error.localizedDescription, preferredStyle: .alert)
                         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                        self.activityIndicator.stopAnimating()
                         self.present(alert, animated: true, completion: nil)
                     } else {
                         print("User Registered successfully")
                         // manually segue to logged in view
+                        self.activityIndicator.stopAnimating()
                         //self.performSegue(withIdentifier: "pushSegue" , sender: self)
                         returnVal = true
                     }
@@ -132,6 +134,7 @@ class LoginViewController: UIViewController {
             override func viewDidLoad() {
                 super.viewDidLoad()
                 // Do any additional setup after loading the view, typically from a nib.
+                activityIndicator.hidesWhenStopped = true
             }
             
             override func didReceiveMemoryWarning() {
