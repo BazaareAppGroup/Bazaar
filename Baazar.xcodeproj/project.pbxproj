@@ -18,6 +18,7 @@
 		1BFF13142059A1AD007AE5F0 /* BaazarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFF13132059A1AD007AE5F0 /* BaazarUITests.swift */; };
 		20FA9C8D628B415C29B63C5E /* Pods_BaazarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AAE43BF0742771538D28A8 /* Pods_BaazarTests.framework */; };
 		6527AC1C2F7A5199506820A6 /* Pods_Baazar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9569AB772AF61CBEAD662238 /* Pods_Baazar.framework */; };
+		BDE40246209A59EA00A73DDD /* Bazaar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE40245209A59EA00A73DDD /* Bazaar.swift */; };
 		ED07E2B919BF35F25B1CB079 /* Pods_BaazarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB75DF72921815D04D315C43 /* Pods_BaazarUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		9B874B1DC7C830A0B5526597 /* Pods-BaazarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaazarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaazarTests/Pods-BaazarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A1AAE43BF0742771538D28A8 /* Pods_BaazarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaazarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E1AFFCB0B74DC8B4A1294E /* Pods-BaazarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaazarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaazarUITests/Pods-BaazarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BDE40245209A59EA00A73DDD /* Bazaar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bazaar.swift; sourceTree = "<group>"; };
 		CB75DF72921815D04D315C43 /* Pods_BaazarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaazarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5FBA082BB8EB13FA558785F /* Pods-BaazarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaazarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaazarUITests/Pods-BaazarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +122,7 @@
 			children = (
 				1BFF12F32059A1AD007AE5F0 /* AppDelegate.swift */,
 				1B623C52207C046C00DD5D56 /* LoginViewController.swift */,
+				BDE40245209A59EA00A73DDD /* Bazaar.swift */,
 				1BB31730209129AD006121F3 /* CategoryTableViewCell.swift */,
 				1BB3172C209125F0006121F3 /* CategoryViewController.swift */,
 				1BFF12F72059A1AD007AE5F0 /* Main.storyboard */,
@@ -466,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE40246209A59EA00A73DDD /* Bazaar.swift in Sources */,
 				1BB3172D209125F0006121F3 /* CategoryViewController.swift in Sources */,
 				1B623C53207C046C00DD5D56 /* LoginViewController.swift in Sources */,
 				1BFF12F42059A1AD007AE5F0 /* AppDelegate.swift in Sources */,
