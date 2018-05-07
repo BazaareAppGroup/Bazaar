@@ -169,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="2815.1999999999998" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Service Category View Controller-->
         <scene sceneID="WBH-We-uO7">
             <objects>
-                <viewController id="f6W-tr-ehk" sceneMemberID="viewController">
+                <viewController id="f6W-tr-ehk" customClass="ServiceCategoryViewController" customModule="Baazar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jR9-3K-W10"/>
                         <viewControllerLayoutGuide type="bottom" id="Z2c-M5-6GD"/>
@@ -204,7 +204,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFS-IZ-ScO">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFS-IZ-ScO">
                                                     <frame key="frameInset" minX="101" minY="10" width="105" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
