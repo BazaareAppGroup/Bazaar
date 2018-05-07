@@ -17,6 +17,7 @@ class Bazaar {
         
         @NSManaged var category : String
         @NSManaged var items: Int
+        @NSManaged var stores: [Store]
         
         static func parseClassName() -> String {
             return "Category"
@@ -29,6 +30,7 @@ class Bazaar {
         @NSManaged var owner : PFUser
         @NSManaged var services : [Service]
         @NSManaged var title : String
+        @NSManaged var image : PFFile?
         
         static func parseClassName() -> String {
             return "Store"
