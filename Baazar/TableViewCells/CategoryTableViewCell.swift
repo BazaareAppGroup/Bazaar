@@ -10,8 +10,14 @@
 import UIKit
 
 class CategoryTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var CategoryLabel: UILabel!
+    
+    var category : Bazaar.Category!{
+        didSet{
+            CategoryLabel.text = category.category
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

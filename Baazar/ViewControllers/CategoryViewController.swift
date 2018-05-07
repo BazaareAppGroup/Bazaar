@@ -11,6 +11,7 @@
 //
 
 import UIKit
+import Parse
 
 class CategoryViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource {
 
@@ -18,16 +19,32 @@ class CategoryViewController: UIViewController, UISearchBarDelegate, UITableView
     
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var categories: [String] = ["a","d","d"] // array will be filled with names of categories
+    var categories: [Bazaar.Category] = [] // array will be filled with names of categories
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
         searchBar.delegate = self
         TableView.dataSource = self
+        // Do any additional setup after loading the view.
+        getCategories()
+        
+        
+        
+    }
+    
+    func getCategories(){
+        let query = PFQuery(className: "Category")
+        query.limit = 20
+        query.addAscendingOrder("items")
+        query.findObjectsInBackground(block: {(categories: [PFObject]?, error: Error?) in
+            if error == nil{
+                self.categories = categories! as! [Bazaar.Category]
+                self.TableView.reloadData()
+            }else{
+                print(error?.localizedDescription)
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +54,6 @@ class CategoryViewController: UIViewController, UISearchBarDelegate, UITableView
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-        
     {
         
         return categories.count
@@ -49,11 +65,9 @@ class CategoryViewController: UIViewController, UISearchBarDelegate, UITableView
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryTableViewCell", for: indexPath) as! CategoryTableViewCell
         
-        cell.CategoryLabel.text = categories[indexPath.row]
+        cell.category = categories[indexPath.row]
         
         return cell
-        
-        
     }
 
     
