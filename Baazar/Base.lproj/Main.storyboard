@@ -204,7 +204,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFS-IZ-ScO">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Store Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFS-IZ-ScO">
                                                     <frame key="frameInset" minX="101" minY="10" width="105" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -375,6 +375,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="0IC-Tn-kgl" kind="relationship" relationship="viewControllers" id="giU-Ej-WCh"/>
+                        <segue destination="vPh-Wc-25z" kind="relationship" relationship="viewControllers" id="ZqO-O7-1fX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Yl-Ht-EOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -413,6 +414,7 @@
                                 <state key="normal" title="Post"/>
                                 <connections>
                                     <action selector="PostClicked:" destination="RsW-hd-7Fo" eventType="touchUpInside" id="mW7-Yo-gFq"/>
+                                    <segue destination="vPh-Wc-25z" kind="show" id="2fE-rm-Dsc"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jSe-Ys-SOW">
@@ -455,12 +457,58 @@
                     <view key="view" contentMode="scaleToFill" id="rPg-FG-PSH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNs-gT-xMA">
+                                <frame key="frameInset" minX="137" minY="49" width="101" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dt-J7-eBQ">
+                                <frame key="frameInset" minX="125" minY="138" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fy-qz-EtG">
+                                <frame key="frameInset" minX="10" minY="143" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lQF-Mp-45l">
+                                <frame key="frameInset" minX="16" minY="268" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89531522689999998" green="0.89531522689999998" blue="0.89531522689999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service Details:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFL-Kv-PU1">
+                                <frame key="frameInset" minX="128" minY="239" width="119" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8Z-D7-gQy">
+                                <frame key="frameInset" minX="172" minY="501" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="PostClicked:" destination="RsW-hd-7Fo" eventType="touchUpInside" id="Uz1-Px-qPx"/>
+                                    <segue destination="vPh-Wc-25z" kind="show" id="KeP-c7-bRs"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6z-55-Vcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2815" y="985"/>
+            <point key="canvasLocation" x="990" y="1765"/>
         </scene>
         <!--Profile-->
         <scene sceneID="h8z-U4-evp">
@@ -552,6 +600,7 @@
                                 <state key="normal" title="Add Store"/>
                                 <connections>
                                     <action selector="AddServicesClicked:" destination="vPh-Wc-25z" eventType="touchUpInside" id="Gbh-Dg-MAh"/>
+                                    <segue destination="RsW-hd-7Fo" kind="show" id="XLN-lU-FPT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -563,6 +612,7 @@
                         <outlet property="UserImage" destination="CzR-ep-Tgq" id="nWz-MH-kwv"/>
                         <outlet property="UsernameLabel" destination="CXW-Tq-o5N" id="zsw-pC-TM2"/>
                         <outlet property="tableView" destination="8FW-8p-73D" id="qNQ-uP-eOb"/>
+                        <segue destination="qsZ-31-ITf" kind="show" id="1lj-2X-7Fl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELS-bv-Zdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -570,4 +620,7 @@
             <point key="canvasLocation" x="989.60000000000002" y="984.55772113943033"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2fE-rm-Dsc"/>
+    </inferredMetricsTieBreakers>
 </document>
