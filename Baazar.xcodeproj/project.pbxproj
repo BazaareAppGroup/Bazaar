@@ -121,10 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				1BFF12F32059A1AD007AE5F0 /* AppDelegate.swift */,
-				1B623C52207C046C00DD5D56 /* LoginViewController.swift */,
+				BD6A8329209CF25400C3B008 /* ViewControllers */,
+				BD6A832A209CF28800C3B008 /* TableViewCells */,
 				BDE40245209A59EA00A73DDD /* Bazaar.swift */,
-				1BB31730209129AD006121F3 /* CategoryTableViewCell.swift */,
-				1BB3172C209125F0006121F3 /* CategoryViewController.swift */,
 				1BFF12F72059A1AD007AE5F0 /* Main.storyboard */,
 				1BFF12FA2059A1AD007AE5F0 /* Assets.xcassets */,
 				1BFF12FC2059A1AD007AE5F0 /* LaunchScreen.storyboard */,
@@ -159,6 +158,23 @@
 				CB75DF72921815D04D315C43 /* Pods_BaazarUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD6A8329209CF25400C3B008 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B623C52207C046C00DD5D56 /* LoginViewController.swift */,
+				1BB3172C209125F0006121F3 /* CategoryViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BD6A832A209CF28800C3B008 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1BB31730209129AD006121F3 /* CategoryTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		FDCAF42690EA13D9051DB1F5 /* Pods */ = {

@@ -19,8 +19,39 @@ class Bazaar {
         @NSManaged var items: Int
         
         static func parseClassName() -> String {
-            return "Categories"
+            return "Category"
         }
+        
+        
+    }
+    
+    class Store: PFObject, PFSubclassing {
+        @NSManaged var owner : PFUser
+        @NSManaged var services : [Service]
+        @NSManaged var title : String
+        
+        static func parseClassName() -> String {
+            return "Store"
+        }
+        
+        
+    }
+    class Service: PFObject, PFSubclassing {
+        @NSManaged var category: Category
+        @NSManaged var overview : String
+        @NSManaged var title : String
+        
+        static func parseClassName() -> String {
+            return "Service"
+        }
+        
+        
+    }
+    class User: PFUser{
+        
+        @NSManaged var screen_name : String
+        @NSManaged var avatar: PFFile
+        
         
         
     }
