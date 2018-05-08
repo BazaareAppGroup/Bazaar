@@ -1,18 +1,45 @@
 #  - *Baazar*
 
 
-Time spent: **X** hours spent in total
+Time spent: **8** hours spent in total
 
 ## User Stories
 
-User Stories for app:
+The following **required** user stories are complete:
 
-- [ ] User login view
+- [x] User sign up and log into bazaar using Parse authentification
+- [ ] User has a profile view
+- [ ] User can create a store 
+- [ ] User can add services to their store(s)
+- [ ] User can logout of account
 - [ ] User can select the category of service they are looking for 
 - [ ] User can scroll through the services of a certain category
-- [ ] Have a service detail page
-- [ ] User can message a service provider
-- [ ] User can post their own service
+- [ ] User can go to a service detail view when a service is selected  
+
+
+The following **optional** user stories are complete:
+- [ ] User can message a store (service provider)
+- [ ] Allow user to add a picture to their profile
+- [ ] Allow User to add picture to their store
+- [ ] Implement search bar to search for services
+- [ ] Implement custom images for tab bar
+
+ 
+
+## Parse  
+
+The following Parse data will be used (columns and rows)
+
+- User 
+    - User name
+
+- Store
+    -
+
+- Services
+
+
+
 
 
 ## Video Walkthrough

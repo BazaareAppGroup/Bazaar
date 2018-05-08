@@ -10,8 +10,20 @@ import UIKit
 
 class AddServicesViewController: UIViewController {
 
+    @IBOutlet weak var ServiceName: UITextField!
+    
+    @IBOutlet weak var ServiceDetailsTextView: UITextView!
+    
+    @IBOutlet weak var CategoryField: UITextField!
+    
+    @IBAction func PostClicked(_ sender: AnyObject) {
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }

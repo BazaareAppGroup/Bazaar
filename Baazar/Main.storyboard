@@ -465,10 +465,10 @@
             </objects>
             <point key="canvasLocation" x="3250" y="985"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Services View Controller-->
         <scene sceneID="j9D-ua-ZQu">
             <objects>
-                <viewController id="qsZ-31-ITf" sceneMemberID="viewController">
+                <viewController id="qsZ-31-ITf" customClass="AddServicesViewController" customModule="Baazar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YJq-Xg-ff8"/>
                         <viewControllerLayoutGuide type="bottom" id="tD9-ZV-c1W"/>
@@ -512,21 +512,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Category:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJv-Il-oDW">
+                                <frame key="frameInset" minX="16" minY="448" width="128" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8Z-D7-gQy">
-                                <frame key="frameInset" minX="172" minY="501" width="31" height="30"/>
+                                <frame key="frameInset" minX="172" minY="606" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Post"/>
                                 <connections>
+                                    <action selector="PostClicked:" destination="qsZ-31-ITf" eventType="touchUpInside" id="O8o-Af-8q9"/>
                                     <action selector="PostClicked:" destination="RsW-hd-7Fo" eventType="touchUpInside" id="Uz1-Px-qPx"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Vg-SP-ugT">
+                                <frame key="frameInset" minX="159" minY="443" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="CategoryField" destination="2Vg-SP-ugT" id="MPS-VI-Sp3"/>
+                        <outlet property="ServiceDetailsTextView" destination="lQF-Mp-45l" id="Id0-oV-Q2m"/>
+                        <outlet property="ServiceName" destination="1dt-J7-eBQ" id="gvp-yP-ymJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6z-55-Vcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4081" y="985"/>
+            <point key="canvasLocation" x="4080.8000000000002" y="984.55772113943033"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="ShC-wr-PsE">
