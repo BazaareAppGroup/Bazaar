@@ -9,13 +9,15 @@
 import UIKit
 
 class AddStoreViewController: UIViewController {
-    @IBOutlet weak var StoreImage: UIImageView!
+   
     
     @IBOutlet weak var StoreTitle: UITextField!
     
+    @IBOutlet weak var StoreImage: UIImageView!
+    
     @IBAction func PostClicked(_ sender: AnyObject) {
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

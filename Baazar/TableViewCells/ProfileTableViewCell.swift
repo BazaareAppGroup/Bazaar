@@ -15,6 +15,8 @@ class ProfileTableViewCell: UITableViewCell {
     @IBOutlet weak var StoreNameLabel: UILabel!
     
     
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

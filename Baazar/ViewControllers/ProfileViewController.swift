@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITableViewDataSource{
 
     @IBOutlet weak var UserImageView: UIImageView!
     
@@ -24,17 +24,60 @@ class ProfileViewController: UIViewController {
     
     
     @IBAction func AddStoreClicked(_ sender: AnyObject) {
+        
+    //performSegue(withIdentifier: "AddHome", sender: self)
+    
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        tableView.dataSource = self
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        // number of stores
+        
+        
+        
+        return 3
+        
+        
+    }
+    
+    
+    
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    
+{
+    let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileTableViewCell", for: indexPath) as! ProfileTableViewCell
+    
+    cell.StoreNameLabel.text = "ge"
+    
+    return cell
+    
+    
+ }
+    
+
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     
+    if (segue.identifier == "AddHome")
+    {
+        
+       var addstore = segue.destination as! AddStoreViewController
+    }
     }
     
 
