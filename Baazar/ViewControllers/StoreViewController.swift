@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  StoreViewController.swift
 //  Baazar
 //
 //  Created by David King on 5/7/18.
@@ -8,24 +8,8 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class StoreViewController: UIViewController {
 
-    @IBOutlet weak var UserImageView: UIImageView!
-    
-    @IBOutlet weak var UsernameLabel: UILabel!
-    
-    
-    @IBOutlet weak var tableView: UITableView!
-    
-    
-    @IBAction func MessagesClicked(_ sender: AnyObject) {
-    }
-    
-    
-    
-    @IBAction func AddStoreClicked(_ sender: AnyObject) {
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

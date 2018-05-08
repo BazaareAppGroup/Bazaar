@@ -15,6 +15,11 @@
 		1BB3174920A117AB006121F3 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3174820A117AB006121F3 /* ServiceViewController.swift */; };
 		1BB3174B20A12807006121F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB3174A20A12807006121F3 /* Main.storyboard */; };
 		1BB3174D20A12A04006121F3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3174C20A12A04006121F3 /* ProfileViewController.swift */; };
+		1BB3174F20A12B51006121F3 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3174E20A12B51006121F3 /* ProfileTableViewCell.swift */; };
+		1BB3175120A13432006121F3 /* AddStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3175020A13432006121F3 /* AddStoreViewController.swift */; };
+		1BB3175320A135DE006121F3 /* AddServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3175220A135DE006121F3 /* AddServicesViewController.swift */; };
+		1BB3175520A1390F006121F3 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3175420A1390F006121F3 /* StoreViewController.swift */; };
+		1BB3175720A1396E006121F3 /* StoreServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3175620A1396E006121F3 /* StoreServiceTableViewCell.swift */; };
 		1BFF12F42059A1AD007AE5F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFF12F32059A1AD007AE5F0 /* AppDelegate.swift */; };
 		1BFF12FB2059A1AD007AE5F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BFF12FA2059A1AD007AE5F0 /* Assets.xcassets */; };
 		1BFF12FE2059A1AD007AE5F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFF12FC2059A1AD007AE5F0 /* LaunchScreen.storyboard */; };
@@ -53,6 +58,11 @@
 		1BB3174820A117AB006121F3 /* ServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		1BB3174A20A12807006121F3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1BB3174C20A12A04006121F3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1BB3174E20A12B51006121F3 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		1BB3175020A13432006121F3 /* AddStoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStoreViewController.swift; sourceTree = "<group>"; };
+		1BB3175220A135DE006121F3 /* AddServicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddServicesViewController.swift; sourceTree = "<group>"; };
+		1BB3175420A1390F006121F3 /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		1BB3175620A1396E006121F3 /* StoreServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreServiceTableViewCell.swift; sourceTree = "<group>"; };
 		1BFF12F02059A1AD007AE5F0 /* Baazar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baazar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFF12F32059A1AD007AE5F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BFF12FA2059A1AD007AE5F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -176,6 +186,9 @@
 				1BB3174420A11346006121F3 /* ServiceCategoryViewController.swift */,
 				1BB3174820A117AB006121F3 /* ServiceViewController.swift */,
 				1BB3174C20A12A04006121F3 /* ProfileViewController.swift */,
+				1BB3175020A13432006121F3 /* AddStoreViewController.swift */,
+				1BB3175220A135DE006121F3 /* AddServicesViewController.swift */,
+				1BB3175420A1390F006121F3 /* StoreViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,6 +198,8 @@
 			children = (
 				1BB31730209129AD006121F3 /* CategoryTableViewCell.swift */,
 				1BB3174620A11451006121F3 /* ServiceCategoryTableViewCell.swift */,
+				1BB3174E20A12B51006121F3 /* ProfileTableViewCell.swift */,
+				1BB3175620A1396E006121F3 /* StoreServiceTableViewCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -502,11 +517,16 @@
 				BDE40246209A59EA00A73DDD /* Bazaar.swift in Sources */,
 				1BB3172D209125F0006121F3 /* CategoryViewController.swift in Sources */,
 				1BB3174520A11346006121F3 /* ServiceCategoryViewController.swift in Sources */,
+				1BB3174F20A12B51006121F3 /* ProfileTableViewCell.swift in Sources */,
+				1BB3175120A13432006121F3 /* AddStoreViewController.swift in Sources */,
 				1B623C53207C046C00DD5D56 /* LoginViewController.swift in Sources */,
+				1BB3175520A1390F006121F3 /* StoreViewController.swift in Sources */,
 				1BFF12F42059A1AD007AE5F0 /* AppDelegate.swift in Sources */,
 				1BB31731209129AD006121F3 /* CategoryTableViewCell.swift in Sources */,
+				1BB3175720A1396E006121F3 /* StoreServiceTableViewCell.swift in Sources */,
 				1BB3174D20A12A04006121F3 /* ProfileViewController.swift in Sources */,
 				1BB3174920A117AB006121F3 /* ServiceViewController.swift in Sources */,
+				1BB3175320A135DE006121F3 /* AddServicesViewController.swift in Sources */,
 				1BB3174720A11451006121F3 /* ServiceCategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

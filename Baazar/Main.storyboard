@@ -399,10 +399,10 @@
             </objects>
             <point key="canvasLocation" x="991" y="135"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Store View Controller-->
         <scene sceneID="dU8-dX-hal">
             <objects>
-                <viewController id="RsW-hd-7Fo" sceneMemberID="viewController">
+                <viewController id="RsW-hd-7Fo" customClass="AddStoreViewController" customModule="Baazar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vYw-dx-Fh9"/>
                         <viewControllerLayoutGuide type="bottom" id="r7r-hs-L7S"/>
@@ -430,7 +430,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Post"/>
                                 <connections>
-                                    <action selector="PostClicked:" destination="RsW-hd-7Fo" eventType="touchUpInside" id="mW7-Yo-gFq"/>
+                                    <action selector="PostClicked:" destination="RsW-hd-7Fo" eventType="touchUpInside" id="b26-Co-fEo"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jSe-Ys-SOW">
@@ -445,7 +445,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbd-zZ-3Z3">
-                                <frame key="frameInset" minX="149" minY="51" width="76" height="21"/>
+                                <frame key="frameInset" minX="149" minY="72" width="76" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -456,11 +456,14 @@
                     </view>
                     <connections>
                         <outlet property="ServiceTitleField" destination="ikc-xd-ZUA" id="BmT-mE-6wZ"/>
+                        <outlet property="StoreImage" destination="jSe-Ys-SOW" id="Pb0-uP-Ags"/>
+                        <outlet property="StoreTitle" destination="ikc-xd-ZUA" id="li9-DU-38G"/>
+                        <segue destination="qNg-sz-PSF" kind="show" identifier="ProfileView" id="ouI-N1-O2p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d66-6c-9um" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4693.6000000000004" y="984.55772113943033"/>
+            <point key="canvasLocation" x="3250" y="985"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="j9D-ua-ZQu">
@@ -523,7 +526,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6z-55-Vcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1929" y="1943"/>
+            <point key="canvasLocation" x="4081" y="985"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="ShC-wr-PsE">
@@ -569,7 +572,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="YcZ-pY-4ML">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="YcZ-pY-4ML" customClass="ProfileTableViewCell" customModule="Baazar" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YcZ-pY-4ML" id="PLq-DX-EhM">
@@ -589,6 +592,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="StoreImageView" destination="V20-Ql-EWI" id="3H7-Nr-00h"/>
+                                            <outlet property="StoreNameLabel" destination="xxM-8N-3Kh" id="lju-qx-7xN"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -606,11 +613,84 @@
                     <connections>
                         <outlet property="UserImageView" destination="ihj-e8-hzp" id="ePw-BU-gNC"/>
                         <outlet property="UsernameLabel" destination="Zcn-fU-MEr" id="Uez-mA-c76"/>
+                        <outlet property="tableView" destination="vaD-YG-gdk" id="2w3-GK-tz2"/>
+                        <segue destination="Aat-vh-pKi" kind="show" action="showDetailViewController:sender:" id="Ez8-Jz-dPh"/>
+                        <segue destination="RsW-hd-7Fo" kind="show" identifier="AddStore" id="mtT-rb-aYb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTR-bh-gQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2380" y="984.55772113943033"/>
+        </scene>
+        <!--Store View Controller-->
+        <scene sceneID="Dep-IM-Qxj">
+            <objects>
+                <viewController id="Aat-vh-pKi" customClass="StoreViewController" customModule="Baazar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Aww-zq-ujT"/>
+                        <viewControllerLayoutGuide type="bottom" id="HVN-oF-vSF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Otc-jb-eq3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Store Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVo-gb-cfe">
+                                <frame key="frameInset" minX="142" minY="84" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fo-6y-VvX">
+                                <frame key="frameInset" minX="146" minY="113" width="87" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w5S-qC-0Oe">
+                                <frame key="frameInset" minY="270" width="375" height="340"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="MhF-vd-0Rt" customClass="StoreServiceTableViewCell" customModule="Baazar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MhF-vd-0Rt" id="Jmg-JY-qWL">
+                                            <frame key="frameInset" width="375" height="61"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpL-fu-AFM">
+                                                    <frame key="frameInset" minX="17" width="107" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMz-AR-ynv">
+                                                    <frame key="frameInset" minX="23" minY="29" width="133" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLa-i4-LLW">
+                                <frame key="frameInset" minX="144" minY="232" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Services"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="qsZ-31-ITf" kind="show" identifier="AddServices" id="HoT-gP-02m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Wa-Gs-fPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2380" y="1796.8515742128936"/>
         </scene>
         <!--Profile-->
         <scene sceneID="k5j-WR-avw">
@@ -632,4 +712,7 @@
             <point key="canvasLocation" x="1440.8" y="984.55772113943033"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ouI-N1-O2p"/>
+    </inferredMetricsTieBreakers>
 </document>
