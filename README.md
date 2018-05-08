@@ -11,13 +11,13 @@ The following **required** user stories are complete:
 - [ ] User has a profile view
 - [ ] User can create a store 
 - [ ] User can add services to their store(s)
-- [ ] User can logout of account
-- [ ] User can select the category of service they are looking for 
-- [ ] User can scroll through the services of a certain category
+- [ ] User can select the category of service they are looking for
+- [ ] User can scroll through the services 
 - [ ] User can go to a service detail view when a service is selected  
 
 
 The following **optional** user stories are complete:
+- [ ] User can logout of account 
 - [ ] User can message a store (service provider)
 - [ ] Allow user to add a picture to their profile
 - [ ] Allow User to add picture to their store
