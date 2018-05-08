@@ -10,6 +10,13 @@ import UIKit
 
 class ServiceCategoryTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var StoreImage: UIImageView!
+    
+    @IBOutlet weak var ServiceName: UILabel!
+    
+    @IBOutlet weak var ServiceOverview: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

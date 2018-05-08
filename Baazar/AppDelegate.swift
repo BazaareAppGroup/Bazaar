@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Welcome back \(currentUser.username) 😀")
             
             let storyBoard = UIStoryboard(name: "Main", bundle: nil )
-            let chatViewController = storyBoard.instantiateViewController(withIdentifier: "HomeViewController")
+            let chatViewController = storyBoard.instantiateViewController(withIdentifier: "TabBar")
             window?.rootViewController = chatViewController
         }
 

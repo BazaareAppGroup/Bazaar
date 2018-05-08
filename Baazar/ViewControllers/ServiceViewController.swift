@@ -1,5 +1,5 @@
 //
-//  ServiceCategoryViewController.swift
+//  ServiceViewController.swift
 //  Baazar
 //
 //  Created by David King on 5/7/18.
@@ -8,12 +8,8 @@
 
 import UIKit
 
-class ServiceCategoryViewController: UIViewController {
+class ServiceViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
-    
-    @IBOutlet weak var CategoryLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

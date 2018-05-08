@@ -1,5 +1,5 @@
 //
-//  ServiceCategoryViewController.swift
+//  ProfileViewController.swift
 //  Baazar
 //
 //  Created by David King on 5/7/18.
@@ -8,11 +8,20 @@
 
 import UIKit
 
-class ServiceCategoryViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var UserImageView: UIImageView!
     
-    @IBOutlet weak var CategoryLabel: UILabel!
+    @IBOutlet weak var UsernameLabel: UILabel!
+    
+    
+    @IBAction func MessagesClicked(_ sender: AnyObject) {
+    }
+    
+    
+    
+    @IBAction func AddStoreClicked(_ sender: AnyObject) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
