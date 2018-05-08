@@ -21,6 +21,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource{
     @IBAction func MessagesClicked(_ sender: AnyObject) {
     }
     
+    @IBAction func LogoutClicked(_ sender: AnyObject) {
+    }
     
     
     @IBAction func AddStoreClicked(_ sender: AnyObject) {
