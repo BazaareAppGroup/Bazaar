@@ -30,13 +30,36 @@ The following **optional** user stories are complete:
 
 The following Parse data will be used (columns and rows)
 
-- User 
-    - User name
 
+- Category
+        
+  - category : String
+  - items: Int
+  - stores: [Store]
+        
+- User
+        
+  - screen name
+  - avatar
+  
 - Store
-    -
+        
+  - owiner 
+  - services
+  - title
+  - image
+        
+- Service
+        
+  - category 
+  - overview
+  - title
+    
+    
+   
+    
+    
 
-- Services
 
 
 
