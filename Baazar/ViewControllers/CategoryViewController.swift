@@ -13,7 +13,7 @@
 import UIKit
 import Parse
 
-class CategoryViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource {
+class CategoryViewController: UIViewController, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var TableView: UITableView!
     

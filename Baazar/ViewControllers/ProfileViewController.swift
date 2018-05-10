@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class ProfileViewController: UIViewController, UITableViewDataSource{
 
@@ -22,6 +23,10 @@ class ProfileViewController: UIViewController, UITableViewDataSource{
     }
     
     @IBAction func LogoutClicked(_ sender: AnyObject) {
+        PFUser.logOut()
+        
+        let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Login") as! UIViewController
+        self.present(viewController, animated: true, completion: nil)
     }
     
     
@@ -34,6 +39,16 @@ class ProfileViewController: UIViewController, UITableViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let user = PFUser.current() as! Bazaar.User
+        if let avatar = user.avatar as? PFFile{
+            do{
+               try UserImageView.image = UIImage(data: avatar.getData() )
+            }catch{
+                print(error.localizedDescription)
+            }
+            
+        }
+        UsernameLabel.text = user.username
         
         tableView.dataSource = self
         

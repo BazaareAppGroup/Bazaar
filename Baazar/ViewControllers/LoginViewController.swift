@@ -32,22 +32,6 @@ class LoginViewController: UIViewController {
         
         var valid: Bool = loginUser(username: username, password: password) // this is to be changed if parse sign in executes succesfully
 
-            if (UsernameText.text! == "" || PasswordText.text! == ""){
-               
-                print("Sign In Error")
-                valid = false
-                
-            }
-            
-            
-            
-            if (valid == true) // executes if sign in is a success
-            {
-                
-                print("sign in valid")
-                performSegue(withIdentifier: "LoginSuccess", sender: nil)
-            }
-            
         }
         
         
@@ -57,23 +41,9 @@ class LoginViewController: UIViewController {
             let username = UsernameText.text ?? ""
             let password = PasswordText.text ?? ""
             
-            var valid: Bool =  registerUser(username: username, password: password)// this is to be changed if parse sign in executes succesfully
+            registerUser(username: username, password: password)// this is to be changed if parse sign in executes succesfully
                 
-                if (UsernameText.text! == "" || PasswordText.text! == ""){
-                   
-                    print("Sign Up Error")
-                    valid = false
-                    
-                }
-                
-                
-                
-                if (valid == true) // executes if sign in is a success
-                {
-                    
-                    performSegue(withIdentifier: "LoginSuccess", sender: self)
-                }
-                
+            
                 
             }
             
@@ -93,7 +63,7 @@ class LoginViewController: UIViewController {
                     } else {
                         print("User logged in successfully")
                         // display view controller that needs to shown after successful login
-                        //self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                        self.performSegue(withIdentifier: "loginSuccess", sender: nil)
                         returnVal = true
                     }
                 }
@@ -122,7 +92,7 @@ class LoginViewController: UIViewController {
                         print("User Registered successfully")
                         // manually segue to logged in view
                         self.activityIndicator.stopAnimating()
-                        //self.performSegue(withIdentifier: "pushSegue" , sender: self)
+                        self.performSegue(withIdentifier: "loginSuccess" , sender: self)
                         returnVal = true
                     }
                 }
@@ -135,6 +105,7 @@ class LoginViewController: UIViewController {
                 super.viewDidLoad()
                 // Do any additional setup after loading the view, typically from a nib.
                 activityIndicator.hidesWhenStopped = true
+                self.navigationController?.navigationBar.isHidden = true
             }
             
             override func didReceiveMemoryWarning() {

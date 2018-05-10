@@ -35,7 +35,17 @@ class Bazaar {
         static func parseClassName() -> String {
             return "Store"
         }
-        
+        func setPFFileFromImage(image: UIImage?){
+            
+            if let image = image{
+                if let imageData = UIImagePNGRepresentation(image){
+                    let file =  PFFile(name: "image.png", data: imageData)
+                    self.image = file!
+                    
+                }
+            }
+            
+        }
         
     }
     class Service: PFObject, PFSubclassing {

@@ -7,17 +7,67 @@
 //
 
 import UIKit
+import Parse
 
-class ServiceCategoryViewController: UIViewController {
+class ServiceCategoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var category : Bazaar.Category!{
+        didSet{
+            stores = category.stores
+            CategoryLabel.text = category.category
+            
+        }
+    }
+    
+    var stores : [Bazaar.Store] = []
+    var services: [Bazaar.Service] = []
 
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var CategoryLabel: UILabel!
     
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return services.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StoreCell") as! StoreServiceTableViewCell
+        
+        return cell
+    }
+    
+    @objc func refreshControlAction(_ refreshControl: UIRefreshControl){
+        getServices()
+        refreshControl.endRefreshing()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.delegate = self
+        tableView.dataSource = self
+        let refresh = UIRefreshControl()
+        refresh.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControlEvents.valueChanged)
+        
+        tableView.refreshControl = refresh
+        getServices()
+        
+        
         // Do any additional setup after loading the view.
+    }
+    
+    func getServices(){
+        let query = PFQuery(className: "Services")
+        query.limit = 20
+        query.findObjectsInBackground(block: {(services: [PFObject]?, error: Error?) in
+            if error == nil{
+                self.services = services! as! [Bazaar.Service]
+                self.tableView.reloadData()
+            }else{
+                print(error?.localizedDescription)
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {
