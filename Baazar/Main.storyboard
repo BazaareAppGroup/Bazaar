@@ -141,17 +141,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" placeholder="search for services" translatesAutoresizingMaskIntoConstraints="NO" id="Qxi-Ug-zzh">
-<<<<<<< HEAD
+
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WPF-lM-VOf">
-=======
-                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WPF-lM-VOf">
-                                <rect key="frame" x="0.0" y="120" width="375" height="498"/>
->>>>>>> Dch
+
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryTableViewCell" rowHeight="64" id="fID-g9-D3K" customClass="CategoryTableViewCell" customModule="Baazar" customModuleProvider="target">
@@ -161,13 +155,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-<<<<<<< HEAD
+
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2b-lf-uSI">
-=======
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2b-lf-uSI">
-                                                    <rect key="frame" x="152" y="20" width="71" height="23"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -189,7 +178,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-<<<<<<< HEAD
+
                         <color key="backgroundColor" red="1" green="0.56801107480000002" blue="0.55380964269999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="WPF-lM-VOf" firstAttribute="top" secondItem="Qxi-Ug-zzh" secondAttribute="bottom" id="4xe-6B-ti4"/>
@@ -200,17 +189,6 @@
                             <constraint firstItem="WPF-lM-VOf" firstAttribute="top" secondItem="Qxi-Ug-zzh" secondAttribute="bottom" id="tf6-rd-nDV"/>
                             <constraint firstAttribute="trailing" secondItem="Qxi-Ug-zzh" secondAttribute="trailing" id="wX5-LR-O4U"/>
                             <constraint firstItem="WPF-lM-VOf" firstAttribute="leading" secondItem="Xc7-Ya-DKs" secondAttribute="leading" id="zBy-Jc-ySd"/>
-=======
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Qxi-Ug-zzh" secondAttribute="trailing" id="7Jb-S3-ITf"/>
-                            <constraint firstItem="Qxi-Ug-zzh" firstAttribute="leading" secondItem="Xc7-Ya-DKs" secondAttribute="leading" id="cjZ-mg-aO1"/>
-                            <constraint firstAttribute="trailing" secondItem="WPF-lM-VOf" secondAttribute="trailing" id="h7P-r5-b1R"/>
-                            <constraint firstItem="NXa-Le-hcD" firstAttribute="top" secondItem="WPF-lM-VOf" secondAttribute="bottom" id="kSS-uC-ge9"/>
-                            <constraint firstItem="Qxi-Ug-zzh" firstAttribute="top" secondItem="MpE-7r-XAf" secondAttribute="bottom" id="p8h-AK-IVJ"/>
-                            <constraint firstItem="WPF-lM-VOf" firstAttribute="top" secondItem="Qxi-Ug-zzh" secondAttribute="bottom" id="wBG-wZ-LRI"/>
-                            <constraint firstItem="WPF-lM-VOf" firstAttribute="leading" secondItem="Xc7-Ya-DKs" secondAttribute="leading" id="zjJ-cV-HgL"/>
->>>>>>> Dch
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Categories" id="Gis-yJ-i4n"/>
@@ -236,17 +214,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jBj-EA-YbW">
-<<<<<<< HEAD
-=======
-                                <rect key="frame" x="0.0" y="161" width="375" height="506"/>
->>>>>>> Dch
+
+
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoreCell" rowHeight="105" id="0ZF-5S-7Gb" customClass="ServiceCategoryTableViewCell" customModule="Baazar" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0ZF-5S-7Gb" id="n0D-7O-5Y7">
-<<<<<<< HEAD
                                             <frame key="frameInset" width="375" height="104"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -258,29 +233,12 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Information on sevice" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMV-bw-bZu">
                                                     <frame key="frameInset" minX="101" minY="39" width="266" height="39"/>
-=======
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ubC-jK-66F">
-                                                    <rect key="frame" x="22" y="8" width="71" height="70"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Information on sevice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMV-bw-bZu">
-                                                    <rect key="frame" x="101" y="39" width="266" height="39"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-<<<<<<< HEAD
+
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFS-IZ-ScO">
-=======
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFS-IZ-ScO">
-                                                    <rect key="frame" x="101" y="10" width="107" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -308,25 +266,17 @@
                                 </prototypes>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="zIL-Jt-A8V">
-<<<<<<< HEAD
+
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQT-dE-Wdj">
-=======
-                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQT-dE-Wdj">
-                                <rect key="frame" x="152" y="130" width="71" height="21"/>
->>>>>>> Dch
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-<<<<<<< HEAD
                             <constraint firstItem="nQT-dE-Wdj" firstAttribute="leading" secondItem="N4R-fq-caC" secondAttribute="leading" constant="152" id="Hhv-w6-BdJ"/>
                             <constraint firstAttribute="trailing" secondItem="zIL-Jt-A8V" secondAttribute="trailing" id="JhQ-KX-5OH"/>
                             <constraint firstItem="zIL-Jt-A8V" firstAttribute="top" secondItem="jR9-3K-W10" secondAttribute="bottom" constant="8" id="MPe-QT-4VH"/>
@@ -337,17 +287,6 @@
                             <constraint firstItem="jBj-EA-YbW" firstAttribute="top" secondItem="nQT-dE-Wdj" secondAttribute="bottom" constant="8" id="iWv-Xa-wTM"/>
                             <constraint firstItem="jBj-EA-YbW" firstAttribute="leading" secondItem="N4R-fq-caC" secondAttribute="leading" id="jjy-F8-dWZ"/>
                             <constraint firstAttribute="trailing" secondItem="jBj-EA-YbW" secondAttribute="trailing" id="jlE-Qk-EYn"/>
-=======
-                            <constraint firstItem="zIL-Jt-A8V" firstAttribute="leading" secondItem="N4R-fq-caC" secondAttribute="leading" id="1wh-Ap-EJg"/>
-                            <constraint firstAttribute="bottom" secondItem="jBj-EA-YbW" secondAttribute="bottom" id="Cyt-Rm-wzz"/>
-                            <constraint firstAttribute="trailing" secondItem="jBj-EA-YbW" secondAttribute="trailing" id="FOq-3k-SRJ"/>
-                            <constraint firstItem="nQT-dE-Wdj" firstAttribute="centerX" secondItem="N4R-fq-caC" secondAttribute="centerX" id="Q5X-ri-dcS"/>
-                            <constraint firstItem="jBj-EA-YbW" firstAttribute="top" secondItem="nQT-dE-Wdj" secondAttribute="bottom" constant="10" id="VhA-9j-ia8"/>
-                            <constraint firstItem="jBj-EA-YbW" firstAttribute="leading" secondItem="N4R-fq-caC" secondAttribute="leading" id="c2G-oK-VNd"/>
-                            <constraint firstItem="nQT-dE-Wdj" firstAttribute="top" secondItem="zIL-Jt-A8V" secondAttribute="bottom" constant="10" id="lyt-cO-DbT"/>
-                            <constraint firstItem="zIL-Jt-A8V" firstAttribute="top" secondItem="jR9-3K-W10" secondAttribute="bottom" id="mjF-8f-DJ0"/>
-                            <constraint firstAttribute="trailing" secondItem="zIL-Jt-A8V" secondAttribute="trailing" id="yQL-HO-cC2"/>
->>>>>>> Dch
                         </constraints>
                     </view>
                     <connections>
@@ -448,19 +387,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< HEAD
+
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Service Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2t-od-g9B">
                                 <frame key="frameInset" minX="127" minY="72" width="121" height="45"/>
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2t-od-g9B">
-                                <rect key="frame" x="146" y="64" width="121" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
+
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
+
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7V3-BU-5bc">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Cvm-lm-zKz"/>
@@ -468,41 +403,16 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhc-iD-MuR">
-=======
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7V3-BU-5bc">
-                                <rect key="frame" x="16" y="120" width="100" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service Details:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQ3-Ok-PBD">
-                                <rect key="frame" x="67" y="296" width="119" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Store Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhc-iD-MuR">
-                                <rect key="frame" x="16" y="223" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-<<<<<<< HEAD
+
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hB-P5-zGm">
                                 <state key="normal" title="Message about Service"/>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Service Details" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O6n-VP-ah3">
-=======
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hB-P5-zGm">
-                                <rect key="frame" x="107" y="526" width="160" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Message about Service"/>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Service Details" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O6n-VP-ah3">
-                                <rect key="frame" x="67" y="325" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -567,90 +477,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< HEAD
+
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNs-gT-xMA">
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNs-gT-xMA">
-                                <rect key="frame" x="137" y="72" width="101" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
+
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dt-J7-eBQ">
-=======
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dt-J7-eBQ">
-                                <rect key="frame" x="125" y="138" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
+
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-<<<<<<< HEAD
+
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fy-qz-EtG">
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fy-qz-EtG">
-                                <rect key="frame" x="10" y="143" width="107" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lQF-Mp-45l">
-=======
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lQF-Mp-45l">
-                                <rect key="frame" x="16" y="268" width="343" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
+
                                 <color key="backgroundColor" red="0.89531522689999998" green="0.89531522689999998" blue="0.89531522689999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Details:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFL-Kv-PU1">
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service Details:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFL-Kv-PU1">
-                                <rect key="frame" x="128" y="239" width="119" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
+
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJv-Il-oDW">
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Category:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJv-Il-oDW">
-                                <rect key="frame" x="16" y="448" width="128" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
+
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Vg-SP-ugT">
-=======
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Vg-SP-ugT">
-                                <rect key="frame" x="159" y="443" width="200" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-<<<<<<< HEAD
+
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8Z-D7-gQy">
-=======
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8Z-D7-gQy">
-                                <rect key="frame" x="172" y="534" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
+
                                 <state key="normal" title="Post"/>
                                 <connections>
                                     <action selector="PostClicked:" destination="qsZ-31-ITf" eventType="touchUpInside" id="O8o-Af-8q9"/>
@@ -708,53 +579,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="was-0K-09T">
-<<<<<<< HEAD
-=======
-                                <rect key="frame" x="149" y="84" width="76" height="20.5"/>
->>>>>>> Dch
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
+
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gF2-Px-4pc">
-=======
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Store Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gF2-Px-4pc">
-                                <rect key="frame" x="131" y="157" width="208" height="30"/>
->>>>>>> Dch
+
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-<<<<<<< HEAD
+
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ule-r7-AND">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tg-YB-5fs">
-=======
-                            <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ycp-zo-t5j">
-                                <rect key="frame" x="36" y="134.5" width="75" height="75"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="0zG-Sr-WWT"/>
-                                    <constraint firstAttribute="width" constant="75" id="ZjZ-T2-jUX"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="RRe-r2-FBy" appends="YES" id="O2W-uw-TsC"/>
-                                </connections>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tg-YB-5fs">
-                                <rect key="frame" x="172" y="207" width="31" height="30"/>
->>>>>>> Dch
+
                                 <state key="normal" title="Post"/>
                                 <connections>
                                     <action selector="PostClicked:" destination="YOI-Dp-Wub" eventType="touchUpInside" id="EYU-tH-egm"/>
                                     <segue destination="vIj-a0-I8s" kind="show" identifier="Addstore2Profile" id="2bF-tE-erq"/>
                                 </connections>
                             </button>
-<<<<<<< HEAD
+
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gO0-AB-bPi"/>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store Image:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLw-hd-f6j">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -782,21 +632,7 @@
                             <constraint firstItem="was-0K-09T" firstAttribute="leading" secondItem="MI4-sr-1WF" secondAttribute="leading" constant="149" id="oBd-fz-8gW"/>
                             <constraint firstItem="gF2-Px-4pc" firstAttribute="top" secondItem="was-0K-09T" secondAttribute="bottom" constant="30" id="q2B-gj-zlw"/>
                             <constraint firstItem="4tg-YB-5fs" firstAttribute="top" secondItem="gO0-AB-bPi" secondAttribute="bottom" constant="84" id="vmP-gP-FWJ"/>
-=======
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="was-0K-09T" firstAttribute="top" secondItem="irM-cI-OM4" secondAttribute="bottom" constant="20" id="7vb-zL-NGY"/>
-                            <constraint firstItem="4tg-YB-5fs" firstAttribute="centerX" secondItem="MI4-sr-1WF" secondAttribute="centerX" id="9hb-Ty-Zjk"/>
-                            <constraint firstItem="gF2-Px-4pc" firstAttribute="leading" secondItem="ycp-zo-t5j" secondAttribute="trailing" constant="20" id="Jqm-gw-4gr"/>
-                            <constraint firstItem="gF2-Px-4pc" firstAttribute="centerY" secondItem="ycp-zo-t5j" secondAttribute="centerY" id="WUy-hw-phi"/>
-                            <constraint firstItem="was-0K-09T" firstAttribute="centerX" secondItem="MI4-sr-1WF" secondAttribute="centerX" id="YxL-FQ-Ic1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gF2-Px-4pc" secondAttribute="trailing" constant="20" id="kF7-R9-fCM"/>
-                            <constraint firstItem="ycp-zo-t5j" firstAttribute="top" secondItem="was-0K-09T" secondAttribute="bottom" constant="30" id="ndC-e3-mJd"/>
-                            <constraint firstItem="4tg-YB-5fs" firstAttribute="top" secondItem="gF2-Px-4pc" secondAttribute="bottom" constant="20" id="q35-8r-Son"/>
-                            <constraint firstItem="ycp-zo-t5j" firstAttribute="leading" secondItem="MI4-sr-1WF" secondAttribute="leadingMargin" constant="20" id="r7f-z0-I5s"/>
->>>>>>> Dch
+
                         </constraints>
                     </view>
                     <connections>
@@ -826,44 +662,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ihj-e8-hzp">
-<<<<<<< HEAD
+
                                 <constraints>
                                     <constraint firstAttribute="height" constant="103" id="7FW-e1-uis"/>
                                     <constraint firstAttribute="width" constant="103" id="DK8-NL-SuA"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcn-fU-MEr">
-=======
-                                <rect key="frame" x="36" y="135" width="90" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="7NB-uY-4Wt"/>
-                                    <constraint firstAttribute="width" constant="90" id="8XI-F3-WBi"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcn-fU-MEr">
-                                <rect key="frame" x="144" y="94" width="86" height="21"/>
->>>>>>> Dch
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaX-lf-oCD">
-<<<<<<< HEAD
-=======
-                                <rect key="frame" x="269" y="135" width="70" height="30"/>
->>>>>>> Dch
+
                                 <state key="normal" title="Messages"/>
                                 <connections>
                                     <action selector="MessagesClicked:" destination="vIj-a0-I8s" eventType="touchUpInside" id="cyy-wd-5yG"/>
                                 </connections>
                             </button>
-<<<<<<< HEAD
+
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYu-so-4C6">
                                 <frame key="frameInset" minX="277" minY="150" width="69" height="28"/>
-=======
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYu-so-4C6">
-                                <rect key="frame" x="269" y="165" width="69" height="30"/>
->>>>>>> Dch
                                 <state key="normal" title="Add Store"/>
                                 <connections>
                                     <action selector="AddStoreClicked:" destination="vIj-a0-I8s" eventType="touchUpInside" id="dSD-kz-UNI"/>
@@ -871,17 +690,14 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vaD-YG-gdk">
-<<<<<<< HEAD
-=======
-                                <rect key="frame" x="0.0" y="286" width="375" height="332"/>
->>>>>>> Dch
+
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileTableViewCell" rowHeight="80" id="YcZ-pY-4ML" customClass="ProfileTableViewCell" customModule="Baazar" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="1000" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YcZ-pY-4ML" id="PLq-DX-EhM">
-<<<<<<< HEAD
+
                                             <frame key="frameInset" width="1000" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -892,18 +708,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxM-8N-3Kh">
-=======
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V20-Ql-EWI">
-                                                    <rect key="frame" x="19" y="0.0" width="65" height="65"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name of Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxM-8N-3Kh">
-                                                    <rect key="frame" x="106" y="29" width="111" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
+
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -926,18 +731,9 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-<<<<<<< HEAD
+
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBR-LW-KHv">
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64M-pQ-JpR">
-                                <rect key="frame" x="162" y="255" width="50" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBR-LW-KHv">
-                                <rect key="frame" x="301" y="89.5" width="48" height="30"/>
->>>>>>> Dch
+
                                 <state key="normal" title="Logout"/>
                                 <connections>
                                     <action selector="LogoutClicked:" destination="vIj-a0-I8s" eventType="touchUpInside" id="BQJ-18-vKP"/>
@@ -949,7 +745,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-<<<<<<< HEAD
+
                         <color key="backgroundColor" red="1" green="0.56801107482413871" blue="0.55380964265078148" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="vaD-YG-gdk" firstAttribute="leading" secondItem="Uhn-va-KDI" secondAttribute="leading" id="0zf-qf-YBF"/>
@@ -968,26 +764,7 @@
                             <constraint firstItem="64M-pQ-JpR" firstAttribute="leading" secondItem="Uhn-va-KDI" secondAttribute="leading" constant="162" id="wbu-kz-Mbm"/>
                             <constraint firstItem="WaX-lf-oCD" firstAttribute="leading" secondItem="ihj-e8-hzp" secondAttribute="trailing" constant="160" id="xnW-sq-wW3"/>
                             <constraint firstItem="Zcn-fU-MEr" firstAttribute="leading" secondItem="Uhn-va-KDI" secondAttribute="leading" constant="22" id="zLi-8D-VeO"/>
-=======
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="yYu-so-4C6" firstAttribute="leading" secondItem="WaX-lf-oCD" secondAttribute="leading" id="1mX-RR-DgZ"/>
-                            <constraint firstItem="vaD-YG-gdk" firstAttribute="top" secondItem="64M-pQ-JpR" secondAttribute="bottom" constant="10" id="36L-4e-o3s"/>
-                            <constraint firstItem="CWM-4E-FDf" firstAttribute="top" secondItem="vaD-YG-gdk" secondAttribute="bottom" id="5ML-fM-rUP"/>
-                            <constraint firstItem="64M-pQ-JpR" firstAttribute="centerX" secondItem="Uhn-va-KDI" secondAttribute="centerX" id="A52-rV-OQi"/>
-                            <constraint firstItem="vaD-YG-gdk" firstAttribute="leading" secondItem="Uhn-va-KDI" secondAttribute="leading" id="NQP-xM-Tx9"/>
-                            <constraint firstItem="64M-pQ-JpR" firstAttribute="top" secondItem="ihj-e8-hzp" secondAttribute="bottom" constant="30" id="Nne-Bl-Rqx"/>
-                            <constraint firstItem="ihj-e8-hzp" firstAttribute="top" secondItem="Zcn-fU-MEr" secondAttribute="bottom" constant="20" id="UDo-6c-fBq"/>
-                            <constraint firstItem="WaX-lf-oCD" firstAttribute="top" secondItem="ihj-e8-hzp" secondAttribute="top" id="Vh8-nt-8ev"/>
-                            <constraint firstAttribute="trailing" secondItem="vaD-YG-gdk" secondAttribute="trailing" id="XBm-gR-qRz"/>
-                            <constraint firstItem="ihj-e8-hzp" firstAttribute="leading" secondItem="Uhn-va-KDI" secondAttribute="leadingMargin" constant="20" id="ZW0-pW-qaD"/>
-                            <constraint firstItem="Zcn-fU-MEr" firstAttribute="centerX" secondItem="Uhn-va-KDI" secondAttribute="centerX" id="aMi-d2-cMO"/>
-                            <constraint firstItem="mBR-LW-KHv" firstAttribute="centerY" secondItem="Zcn-fU-MEr" secondAttribute="centerY" id="ck9-da-toC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mBR-LW-KHv" secondAttribute="trailing" constant="10" id="jCX-G9-sMn"/>
-                            <constraint firstItem="yYu-so-4C6" firstAttribute="top" secondItem="WaX-lf-oCD" secondAttribute="bottom" id="nHv-y9-ydl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WaX-lf-oCD" secondAttribute="trailing" constant="20" id="nij-Dj-1A5"/>
-                            <constraint firstItem="Zcn-fU-MEr" firstAttribute="top" secondItem="es1-6p-ODk" secondAttribute="bottom" constant="30" id="noV-hv-cb8"/>
->>>>>>> Dch
+
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xVo-0B-rxn"/>
@@ -999,11 +776,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTR-bh-gQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
+
             <point key="canvasLocation" x="2233" y="985"/>
-=======
-            <point key="canvasLocation" x="2270" y="985"/>
->>>>>>> Dch
+
         </scene>
         <!--Store View Controller-->
         <scene sceneID="Dep-IM-Qxj">
@@ -1017,18 +792,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVo-gb-cfe">
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Store Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVo-gb-cfe">
-                                <rect key="frame" x="142" y="84" width="91" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2fo-6y-VvX">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="86" id="dx1-5y-P7Y"/>
@@ -1036,46 +804,24 @@
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w5S-qC-0Oe">
-=======
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fo-6y-VvX">
-                                <rect key="frame" x="146" y="113" width="87" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w5S-qC-0Oe">
-                                <rect key="frame" x="0.0" y="270" width="375" height="340"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
+
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoreServiceTableViewCell" rowHeight="62" id="MhF-vd-0Rt" customClass="StoreServiceTableViewCell" customModule="Baazar" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MhF-vd-0Rt" id="Jmg-JY-qWL">
-<<<<<<< HEAD
+
                                             <frame key="frameInset" width="375" height="61"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpL-fu-AFM">
-=======
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpL-fu-AFM">
-                                                    <rect key="frame" x="17" y="0.0" width="342" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                               <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-<<<<<<< HEAD
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Service Overview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMz-AR-ynv">
                                                     <frame key="frameInset" minX="17" minY="26" width="336" height="27"/>
-=======
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMz-AR-ynv">
-                                                    <rect key="frame" x="23" y="29" width="336" height="32"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1097,13 +843,9 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-<<<<<<< HEAD
+
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLa-i4-LLW">
-=======
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLa-i4-LLW">
-                                <rect key="frame" x="144" y="232" width="90" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
->>>>>>> Dch
+
                                 <state key="normal" title="Add Services"/>
                                 <connections>
                                     <action selector="AddServicesClicked:" destination="Aat-vh-pKi" eventType="touchUpInside" id="lCs-l2-CcE"/>
