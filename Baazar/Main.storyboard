@@ -340,7 +340,7 @@
         <scene sceneID="Lmy-CN-VNz">
             <objects>
                 <navigationController storyboardIdentifier="HomeViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0IC-Tn-kgl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="kiosk" selectedImage="kiosk" id="Idr-eG-T1E"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="kiosk" id="Idr-eG-T1E"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EW0-bp-cYm">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -527,19 +527,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="was-0K-09T">
-                                <rect key="frame" x="149" y="40" width="76" height="20.5"/>
+                                <rect key="frame" x="149" y="84" width="76" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Store Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gF2-Px-4pc">
-                                <rect key="frame" x="131" y="113" width="208" height="30"/>
+                                <rect key="frame" x="131" y="157" width="208" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kiosk-big" translatesAutoresizingMaskIntoConstraints="NO" id="ycp-zo-t5j">
-                                <rect key="frame" x="36" y="90.5" width="75" height="75"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ycp-zo-t5j">
+                                <rect key="frame" x="36" y="134.5" width="75" height="75"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="0zG-Sr-WWT"/>
@@ -550,7 +550,7 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tg-YB-5fs">
-                                <rect key="frame" x="172" y="163" width="31" height="30"/>
+                                <rect key="frame" x="172" y="207" width="31" height="30"/>
                                 <state key="normal" title="Post"/>
                                 <connections>
                                     <action selector="PostClicked:" destination="YOI-Dp-Wub" eventType="touchUpInside" id="EYU-tH-egm"/>
@@ -598,28 +598,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ihj-e8-hzp">
-                                <rect key="frame" x="36" y="91" width="90" height="90"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ihj-e8-hzp">
+                                <rect key="frame" x="36" y="135" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="7NB-uY-4Wt"/>
                                     <constraint firstAttribute="width" constant="90" id="8XI-F3-WBi"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcn-fU-MEr">
-                                <rect key="frame" x="144" y="50" width="86" height="21"/>
+                                <rect key="frame" x="144" y="94" width="86" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaX-lf-oCD">
-                                <rect key="frame" x="269" y="91" width="70" height="30"/>
+                                <rect key="frame" x="269" y="135" width="70" height="30"/>
                                 <state key="normal" title="Messages"/>
                                 <connections>
                                     <action selector="MessagesClicked:" destination="vIj-a0-I8s" eventType="touchUpInside" id="cyy-wd-5yG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYu-so-4C6">
-                                <rect key="frame" x="269" y="121" width="69" height="30"/>
+                                <rect key="frame" x="269" y="165" width="69" height="30"/>
                                 <state key="normal" title="Add Store"/>
                                 <connections>
                                     <action selector="AddStoreClicked:" destination="vIj-a0-I8s" eventType="touchUpInside" id="dSD-kz-UNI"/>
@@ -627,7 +627,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vaD-YG-gdk">
-                                <rect key="frame" x="0.0" y="242" width="375" height="425"/>
+                                <rect key="frame" x="0.0" y="286" width="375" height="332"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileTableViewCell" rowHeight="80" id="YcZ-pY-4ML" customClass="ProfileTableViewCell" customModule="Baazar" customModuleProvider="target">
@@ -659,13 +659,13 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64M-pQ-JpR">
-                                <rect key="frame" x="162" y="211" width="50" height="21"/>
+                                <rect key="frame" x="162" y="255" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBR-LW-KHv">
-                                <rect key="frame" x="301" y="45.5" width="48" height="30"/>
+                                <rect key="frame" x="301" y="89.5" width="48" height="30"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
                                     <action selector="LogoutClicked:" destination="vIj-a0-I8s" eventType="touchUpInside" id="BQJ-18-vKP"/>
@@ -786,7 +786,7 @@
         <scene sceneID="k5j-WR-avw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qNg-sz-PSF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="profile" selectedImage="profile" id="ZJT-a2-Irt"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="ZJT-a2-Irt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ss6-ZR-E0k">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -804,11 +804,9 @@
     </scenes>
     <resources>
         <image name="kiosk" width="20" height="20"/>
-        <image name="kiosk-big" width="512" height="512"/>
-        <image name="placeholder" width="256" height="256"/>
         <image name="profile" width="42" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2bF-tE-erq"/>
+        <segue reference="I7Q-sq-EDU"/>
     </inferredMetricsTieBreakers>
 </document>
