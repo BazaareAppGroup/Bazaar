@@ -62,10 +62,10 @@ class ProfileViewController: UIViewController, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        // number of stores
         
         
         
+        //replace with number of stores user owns
         return 3
         
         
@@ -78,6 +78,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 {
     let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileTableViewCell", for: indexPath) as! ProfileTableViewCell
     
+    // replace text with store name
     cell.StoreNameLabel.text = "ge"
     
     return cell
