@@ -216,7 +216,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ubC-jK-66F">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-04-21 at 12.31.17 PM" translatesAutoresizingMaskIntoConstraints="NO" id="ubC-jK-66F">
                                                     <rect key="frame" x="22" y="8" width="71" height="70"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -340,7 +340,7 @@
         <scene sceneID="Lmy-CN-VNz">
             <objects>
                 <navigationController storyboardIdentifier="HomeViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0IC-Tn-kgl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="kiosk" id="Idr-eG-T1E"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="kiosk" selectedImage="kiosk-small" id="Idr-eG-T1E"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EW0-bp-cYm">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -538,7 +538,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ycp-zo-t5j">
+                            <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kiosk-big" translatesAutoresizingMaskIntoConstraints="NO" id="ycp-zo-t5j">
                                 <rect key="frame" x="36" y="134.5" width="75" height="75"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -598,7 +598,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ihj-e8-hzp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-big" translatesAutoresizingMaskIntoConstraints="NO" id="ihj-e8-hzp">
                                 <rect key="frame" x="36" y="135" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="7NB-uY-4Wt"/>
@@ -786,7 +786,7 @@
         <scene sceneID="k5j-WR-avw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qNg-sz-PSF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="ZJT-a2-Irt"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" selectedImage="profile-small" id="ZJT-a2-Irt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ss6-ZR-E0k">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -803,8 +803,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Screen Shot 2018-04-21 at 12.31.17 PM" width="1208" height="1196"/>
         <image name="kiosk" width="20" height="20"/>
+        <image name="kiosk-big" width="512" height="512"/>
+        <image name="kiosk-small" width="20" height="20"/>
         <image name="profile" width="42" height="42"/>
+        <image name="profile-big" width="512" height="512"/>
+        <image name="profile-small" width="42" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="I7Q-sq-EDU"/>
