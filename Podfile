@@ -6,7 +6,7 @@ target 'Baazar' do
   use_frameworks!
 
   # Pods for Baazar
-	pod 'Parse'
+pod 'Parse'
   target 'BaazarTests' do
     inherit! :search_paths
     # Pods for testing
