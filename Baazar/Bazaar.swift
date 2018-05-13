@@ -71,13 +71,5 @@ class Bazaar {
         
         
     }
-    class User: PFUser{
-        
-        @NSManaged var screen_name : String
-        @NSManaged var avatar: PFFile
-        @NSManaged var stores: Int
-        
-        
-        
-    }
+    
 }
