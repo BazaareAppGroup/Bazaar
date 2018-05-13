@@ -44,8 +44,8 @@ class CategoryViewController: UIViewController, UISearchBarDelegate, UITableView
         query.limit = 20
         query.addAscendingOrder("items")
         query.findObjectsInBackground(block: {(categories: [PFObject]?, error: Error?) in
-            if error == nil{
-                self.categories = categories! as! [Bazaar.Category]
+            if let categories = categories as? [Bazaar.Category]{
+                self.categories = categories
                 self.TableView.reloadData()
             }else{
                 print(error?.localizedDescription)

@@ -9,7 +9,21 @@
 import UIKit
 
 class ServiceViewController: UIViewController {
+    
+    @IBOutlet weak var serviceName: UILabel!
+    @IBOutlet weak var overview: UITextView!
+    
+    
+    
+    var service : Bazaar.Service!{
+        didSet{
+            serviceName.text = service.title
+            overview.text = service.overview
+        }
+    }
 
+    @IBAction func contactButton(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

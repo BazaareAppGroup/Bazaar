@@ -337,21 +337,21 @@
                                 <rect key="frame" x="0.0" y="156.5" width="375" height="510.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoreCell" rowHeight="105" id="0ZF-5S-7Gb" customClass="ServiceCategoryTableViewCell" customModule="Baazar" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ServiceCell" rowHeight="105" id="0ZF-5S-7Gb" customClass="ServiceTableViewCell" customModule="Baazar" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0ZF-5S-7Gb" id="n0D-7O-5Y7">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Information on sevice" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMV-bw-bZu">
-                                                    <rect key="frame" x="101" y="39" width="266" height="39"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wb0-dK-2Qk">
+                                                    <rect key="frame" x="20" y="10" width="111" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Service Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFS-IZ-ScO">
-                                                    <rect key="frame" x="1000" y="10" width="106.5" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Information on sevice" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMV-bw-bZu">
+                                                    <rect key="frame" x="25" y="40" width="350" height="54.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -359,13 +359,15 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="KMV-bw-bZu" secondAttribute="trailing" id="Exs-JG-Ad2"/>
-                                                <constraint firstAttribute="bottom" secondItem="KMV-bw-bZu" secondAttribute="bottom" constant="18" id="PnL-by-ll6"/>
-                                                <constraint firstItem="iFS-IZ-ScO" firstAttribute="top" secondItem="n0D-7O-5Y7" secondAttribute="top" constant="10" id="TOL-VH-esa"/>
-                                                <constraint firstItem="KMV-bw-bZu" firstAttribute="top" secondItem="iFS-IZ-ScO" secondAttribute="bottom" constant="8" id="nGd-er-3eR"/>
+                                                <constraint firstAttribute="bottom" secondItem="KMV-bw-bZu" secondAttribute="bottom" constant="10" id="PnL-by-ll6"/>
+                                                <constraint firstItem="KMV-bw-bZu" firstAttribute="top" secondItem="Wb0-dK-2Qk" secondAttribute="bottom" constant="10" id="cPl-wz-Ryf"/>
+                                                <constraint firstItem="Wb0-dK-2Qk" firstAttribute="leading" secondItem="n0D-7O-5Y7" secondAttribute="leading" constant="20" id="jOD-Qk-303"/>
+                                                <constraint firstItem="KMV-bw-bZu" firstAttribute="leading" secondItem="n0D-7O-5Y7" secondAttribute="leadingMargin" constant="10" id="lid-2N-OU4"/>
+                                                <constraint firstItem="Wb0-dK-2Qk" firstAttribute="top" secondItem="n0D-7O-5Y7" secondAttribute="top" constant="10" id="twP-r7-WzH"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="ServiceName" destination="iFS-IZ-ScO" id="cdT-b4-1k3"/>
+                                            <outlet property="ServiceName" destination="Wb0-dK-2Qk" id="dyN-LF-mZQ"/>
                                             <outlet property="ServiceOverview" destination="KMV-bw-bZu" id="Fwx-oY-4hc"/>
                                             <segue destination="yss-Gs-4B5" kind="show" identifier="ServiceDetail" id="qW9-zi-WxP"/>
                                         </connections>
@@ -576,6 +578,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hB-P5-zGm">
                                 <rect key="frame" x="195" y="109" width="160" height="30"/>
                                 <state key="normal" title="Message about Service"/>
+                                <connections>
+                                    <action selector="contactButton:" destination="yss-Gs-4B5" eventType="touchUpInside" id="RRP-w2-XMr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.56801107480000002" blue="0.55380964269999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -593,10 +598,14 @@
                             <constraint firstItem="4hB-P5-zGm" firstAttribute="centerY" secondItem="UQ3-Ok-PBD" secondAttribute="centerY" id="sgi-sM-CcY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="overview" destination="O6n-VP-ah3" id="lUk-lk-gHu"/>
+                        <outlet property="serviceName" destination="a2t-od-g9B" id="bXH-mf-DEI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hg-VK-19o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4440.8000000000002" y="135.38230884557723"/>
+            <point key="canvasLocation" x="4396" y="136"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fgb-pV-h4U">

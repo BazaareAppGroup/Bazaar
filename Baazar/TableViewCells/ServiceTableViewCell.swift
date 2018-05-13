@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ServiceCategoryTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var StoreImage: UIImageView!
+class ServiceTableViewCell: UITableViewCell {
     
     @IBOutlet weak var ServiceName: UILabel!
     
     @IBOutlet weak var ServiceOverview: UILabel!
+    
+    var service : Bazaar.Service!{
+        ServiceName.text = service.title
+        ServiceOverview.text = service.overview
+    }
     
     
     override func awakeFromNib() {

@@ -11,7 +11,7 @@
 		1BB3172D209125F0006121F3 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3172C209125F0006121F3 /* CategoryViewController.swift */; };
 		1BB31731209129AD006121F3 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB31730209129AD006121F3 /* CategoryTableViewCell.swift */; };
 		1BB3174520A11346006121F3 /* ServiceCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3174420A11346006121F3 /* ServiceCategoryViewController.swift */; };
-		1BB3174720A11451006121F3 /* ServiceCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3174620A11451006121F3 /* ServiceCategoryTableViewCell.swift */; };
+		1BB3174720A11451006121F3 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3174620A11451006121F3 /* ServiceTableViewCell.swift */; };
 		1BB3174920A117AB006121F3 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3174820A117AB006121F3 /* ServiceViewController.swift */; };
 		1BB3174B20A12807006121F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB3174A20A12807006121F3 /* Main.storyboard */; };
 		1BB3174D20A12A04006121F3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3174C20A12A04006121F3 /* ProfileViewController.swift */; };
@@ -55,7 +55,7 @@
 		1BB3172C209125F0006121F3 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		1BB31730209129AD006121F3 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		1BB3174420A11346006121F3 /* ServiceCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCategoryViewController.swift; sourceTree = "<group>"; };
-		1BB3174620A11451006121F3 /* ServiceCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		1BB3174620A11451006121F3 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
 		1BB3174820A117AB006121F3 /* ServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 		1BB3174A20A12807006121F3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1BB3174C20A12A04006121F3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				1BB31730209129AD006121F3 /* CategoryTableViewCell.swift */,
-				1BB3174620A11451006121F3 /* ServiceCategoryTableViewCell.swift */,
+				1BB3174620A11451006121F3 /* ServiceTableViewCell.swift */,
 				1BB3174E20A12B51006121F3 /* ProfileTableViewCell.swift */,
 				1BB3175620A1396E006121F3 /* StoreServiceTableViewCell.swift */,
 			);
@@ -530,7 +530,7 @@
 				1BB3174D20A12A04006121F3 /* ProfileViewController.swift in Sources */,
 				1BB3174920A117AB006121F3 /* ServiceViewController.swift in Sources */,
 				1BB3175320A135DE006121F3 /* AddServicesViewController.swift in Sources */,
-				1BB3174720A11451006121F3 /* ServiceCategoryTableViewCell.swift in Sources */,
+				1BB3174720A11451006121F3 /* ServiceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

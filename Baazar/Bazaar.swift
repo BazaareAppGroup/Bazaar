@@ -17,7 +17,7 @@ class Bazaar {
         
         @NSManaged var category : String
         @NSManaged var items: Int
-        @NSManaged var stores: [Store]
+        @NSManaged var stores: [Service]
         
         static func parseClassName() -> String {
             return "Category"
@@ -59,11 +59,19 @@ class Bazaar {
             
         }
         
+        func saveStore(owner: PFUser, services: [Service], title: String){
+            
+        }
+        
+        func addService(service: Service)
+        
+        
     }
     class Service: PFObject, PFSubclassing {
         @NSManaged var category: Category
         @NSManaged var overview : String
         @NSManaged var title : String
+        @NSManaged var user: PFUser
         
         static func parseClassName() -> String {
             return "Service"

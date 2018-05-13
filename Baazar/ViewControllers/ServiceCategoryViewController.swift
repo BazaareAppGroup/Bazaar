@@ -57,18 +57,7 @@ class ServiceCategoryViewController: UIViewController, UITableViewDelegate, UITa
         // Do any additional setup after loading the view.
     }
     
-    func getServices(){
-        let query = PFQuery(className: "Services")
-        query.limit = 20
-        query.findObjectsInBackground(block: {(services: [PFObject]?, error: Error?) in
-            if error == nil{
-                self.services = services! as! [Bazaar.Service]
-                self.tableView.reloadData()
-            }else{
-                print(error?.localizedDescription)
-            }
-        })
-    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -78,7 +67,18 @@ class ServiceCategoryViewController: UIViewController, UITableViewDelegate, UITa
 
     /*
     // MARK: - Navigation
-
+     func getServices(){
+     let query = PFQuery(className: "Services")
+     query.limit = 20
+     query.findObjectsInBackground(block: {(services: [PFObject]?, error: Error?) in
+     if let services = services as? [Bazaar.Service]{
+     self.services = services
+     self.tableView.reloadData()
+     }else{
+     print(error?.localizedDescription)
+     }
+     })
+     }
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
