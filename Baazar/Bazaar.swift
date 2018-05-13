@@ -26,11 +26,23 @@ class Bazaar {
         
     }
     
+    class Location: PFObject, PFSubclassing {
+        
+        @NSManaged var longitude: Double
+        @NSManaged var latitude: Double
+        
+        
+        static func parseClassName() -> String {
+            return "Location"
+        }
+    }
+    
     class Store: PFObject, PFSubclassing {
         @NSManaged var owner : PFUser
         @NSManaged var services : [Service]
         @NSManaged var title : String
         @NSManaged var image : PFFile?
+        @NSManaged var location: Location
         
         static func parseClassName() -> String {
             return "Store"
@@ -63,6 +75,7 @@ class Bazaar {
         
         @NSManaged var screen_name : String
         @NSManaged var avatar: PFFile
+        @NSManaged var stores: Int
         
         
         

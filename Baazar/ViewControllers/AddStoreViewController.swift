@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class AddStoreViewController: UIViewController , UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class AddStoreViewController: UIViewController , UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIGestureRecognizerDelegate{
    
     
     @IBOutlet weak var StoreTitle: UITextField!
@@ -18,10 +18,11 @@ class AddStoreViewController: UIViewController , UIImagePickerControllerDelegate
     
     @IBAction func PostClicked(_ sender: AnyObject) {
         let store = Bazaar.Store()
+        let user = PFUser.current() as! Bazaar.User
         if let image = StoreImage.image{
             store.setPFFileFromImage(image: image)
         }
-        store.owner = PFUser.current()!
+        store.owner = user
         if let title = StoreTitle.text{
             store.title = title
         }else{
@@ -32,6 +33,13 @@ class AddStoreViewController: UIViewController , UIImagePickerControllerDelegate
         store.saveInBackground{
             (state : Bool, error: Error?) -> () in
             if state {
+                print("item saved")
+                user["stores"] = user.stores + 1
+                do{
+                    try user.save()
+                }catch{
+                    
+                }
                 
             }else{
                 let alert = UIAlertController(title: nil, message: error?.localizedDescription, preferredStyle: .alert)
@@ -42,6 +50,7 @@ class AddStoreViewController: UIViewController , UIImagePickerControllerDelegate
     }
     
     @IBAction func takePicture(_ sender: Any) {
+        print("take picture")
         let vc = UIImagePickerController()
         vc.delegate = self
         vc.allowsEditing = true

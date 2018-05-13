@@ -36,6 +36,27 @@ class ProfileViewController: UIViewController, UITableViewDataSource{
     
     }
     
+    @IBAction func addProfilePic(_ sender: Any){
+        print("photo tapped")
+    
+        let vc = UIImagePickerController()
+        vc.delegate = self
+        vc.allowsEditing = true
+        vc.sourceType = .photoLibrary
+        self.present(vc, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        let image = info[UIImagePickerControllerEditedImage] as! UIImage
+        UserImageView.image = image
+        let user = PFUser.current()!
+        
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -66,7 +87,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource{
         
         
         //replace with number of stores user owns
-        return 3
+        return (PFUser.current() as! Bazaar.User).stores
         
         
     }

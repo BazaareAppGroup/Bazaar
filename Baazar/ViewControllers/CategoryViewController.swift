@@ -29,8 +29,14 @@ class CategoryViewController: UIViewController, UISearchBarDelegate, UITableView
         // Do any additional setup after loading the view.
         getCategories()
         
-        
-        
+        let refresh = UIRefreshControl()
+        refresh.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControlEvents.valueChanged)
+        TableView.refreshControl = refresh
+    }
+    
+    @objc func refreshControlAction(_ refreshControl: UIRefreshControl){
+        getCategories()
+        refreshControl.endRefreshing()
     }
     
     func getCategories(){

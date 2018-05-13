@@ -35,17 +35,7 @@ class LoginViewController: UIViewController {
         }
         
         
-        @IBAction func SignUpClicked(_ sender: AnyObject) {
-            
-
-            let username = UsernameText.text ?? ""
-            let password = PasswordText.text ?? ""
-            
-            registerUser(username: username, password: password)// this is to be changed if parse sign in executes succesfully
-                
-            
-                
-            }
+        
             
 
             func loginUser(username: String, password: String) -> Bool{
@@ -69,37 +59,7 @@ class LoginViewController: UIViewController {
                 }
                 return returnVal
             }
-            func registerUser(username: String, password: String) -> Bool{
-                var returnVal: Bool = false
-                // initialize a user object
-                let newUser = PFUser()
-                
-                // set user properties
-                newUser.username = UsernameText.text ?? ""
-                newUser.password = PasswordText.text ?? ""
-                
-                activityIndicator.startAnimating()
-                
-                // call sign up function on the object
-                newUser.signUpInBackground { (success: Bool, error: Error?) in
-                    if let error = error {
-                        print(error.localizedDescription)
-                        let alert = UIAlertController(title: nil, message: error.localizedDescription, preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-                        self.activityIndicator.stopAnimating()
-                        self.present(alert, animated: true, completion: nil)
-                    } else {
-                        print("User Registered successfully")
-                        // manually segue to logged in view
-                        self.activityIndicator.stopAnimating()
-                        self.performSegue(withIdentifier: "loginSuccess" , sender: self)
-                        returnVal = true
-                    }
-                }
-                
-                return returnVal
-            }
-          
+            
             
             override func viewDidLoad() {
                 super.viewDidLoad()
