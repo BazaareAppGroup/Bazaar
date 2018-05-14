@@ -18,7 +18,7 @@ class AddStoreViewController: UIViewController , UIImagePickerControllerDelegate
     
     @IBAction func PostClicked(_ sender: AnyObject) {
         let store = Bazaar.Store()
-        let user = PFUser.current() as! Bazaar.User
+        let user = PFUser.current()!
         if let image = StoreImage.image{
             store.setPFFileFromImage(image: image)
         }
@@ -34,7 +34,7 @@ class AddStoreViewController: UIViewController , UIImagePickerControllerDelegate
             (state : Bool, error: Error?) -> () in
             if state {
                 print("item saved")
-                user["stores"] = user.stores + 1
+                user.incrementKey("store")
                 do{
                     try user.save()
                 }catch{

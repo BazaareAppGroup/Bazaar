@@ -15,8 +15,10 @@ class ServiceTableViewCell: UITableViewCell {
     @IBOutlet weak var ServiceOverview: UILabel!
     
     var service : Bazaar.Service!{
-        ServiceName.text = service.title
-        ServiceOverview.text = service.overview
+        didSet{
+            ServiceName.text = service.title
+            ServiceOverview.text = service.overview
+        }
     }
     
     

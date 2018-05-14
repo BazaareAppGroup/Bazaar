@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate{
+class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     @IBOutlet weak var UserImageView: UIImageView!
     
@@ -17,6 +17,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     @IBOutlet weak var tableView: UITableView!
+    
+    var services : [Bazaar.Service] = []
     
     
     @IBAction func MessagesClicked(_ sender: AnyObject) {
@@ -60,17 +62,9 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let user = PFUser.current() as! Bazaar.User
-        if let avatar = user.avatar as? PFFile{
-            do{
-               try UserImageView.image = UIImage(data: avatar.getData() )
-            }catch{
-                print(error.localizedDescription)
-            }
-            
-        }
+        let user = PFUser.current()!
         UsernameLabel.text = user.username
-        
+        getServices()
         tableView.dataSource = self
         
         
@@ -87,7 +81,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         
         
         //replace with number of stores user owns
-        return (PFUser.current() as! Bazaar.User).stores
+        return services.count
         
         
     }
@@ -100,7 +94,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
     let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileTableViewCell", for: indexPath) as! ProfileTableViewCell
     
     // replace text with store name
-    cell.StoreNameLabel.text = "ge"
+    cell.service = services[indexPath.row]
     
     return cell
     
@@ -108,14 +102,29 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
  }
     
 
-    
+    func getServices(){
+        let query = PFQuery(className: "Service")
+        query.limit = 20
+        //query.whereKey("userId", contains: PFUser.current()?.objectId)
+        //query.whereKey("userId", equalTo: PFUser.current()?.objectId)
+        query.findObjectsInBackground(block: {(services: [PFObject]?, error: Error?) in
+            if let services = services as? [Bazaar.Service]{
+                self.services = services
+                print(services)
+                self.tableView.reloadData()
+            }else{
+                print(error?.localizedDescription)
+            }
+        })
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      
     if (segue.identifier == "AddHome")
     {
         
-       var addstore = segue.destination as! AddStoreViewController
+       var addService = segue.destination as! AddServicesViewController
+        
     }
     }
     

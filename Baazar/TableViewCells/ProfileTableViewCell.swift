@@ -10,10 +10,16 @@ import UIKit
 
 class ProfileTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var StoreImageView: UIImageView!
+    @IBOutlet weak var serviceName: UILabel!
     
-    @IBOutlet weak var StoreNameLabel: UILabel!
+    @IBOutlet weak var overview: UILabel!
     
+    var service : Bazaar.Service!{
+        didSet{
+            serviceName.text = service.title
+            overview.text = service.overview
+        }
+    }
     
     
     

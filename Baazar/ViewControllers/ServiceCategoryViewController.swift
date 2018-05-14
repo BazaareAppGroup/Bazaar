@@ -11,16 +11,12 @@ import Parse
 
 class ServiceCategoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var category : Bazaar.Category!{
-        didSet{
-            stores = category.stores
-            CategoryLabel.text = category.category
-            
-        }
-    }
     
-    var stores : [Bazaar.Store] = []
+    
+    
     var services: [Bazaar.Service] = []
+    
+    var currentIndex : IndexPath?
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -33,8 +29,8 @@ class ServiceCategoryViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "StoreCell") as! StoreServiceTableViewCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ServiceCell") as! ServiceTableViewCell
+        cell.service = services[indexPath.row]
         return cell
     }
     
@@ -57,7 +53,23 @@ class ServiceCategoryViewController: UIViewController, UITableViewDelegate, UITa
         // Do any additional setup after loading the view.
     }
     
+    func getServices(){
+        let query = PFQuery(className: "Service")
+        query.limit = 20
+        query.findObjectsInBackground{(services: [PFObject]?, error: Error?) in
+            if let services = services as? [Bazaar.Service]{
+                self.services = services
+                print(services)
+                self.tableView.reloadData()
+            }else{
+                print(error?.localizedDescription)
+            }
+        }
+    }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        currentIndex = indexPath
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -65,25 +77,19 @@ class ServiceCategoryViewController: UIViewController, UITableViewDelegate, UITa
     }
     
 
-    /*
+    
     // MARK: - Navigation
-     func getServices(){
-     let query = PFQuery(className: "Services")
-     query.limit = 20
-     query.findObjectsInBackground(block: {(services: [PFObject]?, error: Error?) in
-     if let services = services as? [Bazaar.Service]{
-     self.services = services
-     self.tableView.reloadData()
-     }else{
-     print(error?.localizedDescription)
-     }
-     })
-     }
+     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if(segue.identifier == "ServiceDetial"){
+            let vc = segue.destination as! ServiceViewController
+            vc.service = services[ currentIndex!.row]
+            
+        }
     }
-    */
+    
 
 }

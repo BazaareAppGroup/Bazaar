@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class AddServicesViewController: UIViewController {
 
@@ -16,7 +17,28 @@ class AddServicesViewController: UIViewController {
     
     @IBOutlet weak var CategoryField: UITextField!
     
+    
+    var service : Bazaar.Service!{
+        didSet{
+            ServiceName.text = service.title
+            ServiceDetailsTextView.text = service.overview
+        }
+    }
+    
+    
+    
     @IBAction func PostClicked(_ sender: AnyObject) {
+        
+        Bazaar.Service().addService(category: CategoryField.text!.lowercased(), overview: ServiceDetailsTextView.text, title: ServiceName.text!, user: PFUser.current()!){
+            (state: Bool?, error: Error?) in
+            if let state = state{
+                self.performSegue(withIdentifier: "backSegue", sender: nil)
+                
+            }else{
+                Bazaar.alert(Title: "", Message: error!.localizedDescription, viewController: self)
+            }
+        }
+        
     }
     
     

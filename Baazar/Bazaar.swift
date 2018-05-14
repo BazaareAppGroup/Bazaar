@@ -9,6 +9,12 @@
 import Foundation
 import Parse
 
+extension PFUser{
+    @NSManaged var screen_name : String
+    @NSManaged var avatar: PFFile
+    @NSManaged var stores: Int
+}
+
 class Bazaar {
     
     
@@ -17,7 +23,7 @@ class Bazaar {
         
         @NSManaged var category : String
         @NSManaged var items: Int
-        @NSManaged var stores: [Service]
+        @NSManaged var services: [Service]
         
         static func parseClassName() -> String {
             return "Category"
@@ -28,8 +34,8 @@ class Bazaar {
     
     class Location: PFObject, PFSubclassing {
         
-        @NSManaged var longitude: Double
-        @NSManaged var latitude: Double
+        @NSManaged var point: PFGeoPoint
+        
         
         
         static func parseClassName() -> String {
@@ -63,21 +69,54 @@ class Bazaar {
             
         }
         
-        func addService(service: Service)
-        
         
     }
+    
+    
+    
     class Service: PFObject, PFSubclassing {
-        @NSManaged var category: Category
+        @NSManaged var category: String
         @NSManaged var overview : String
         @NSManaged var title : String
         @NSManaged var user: PFUser
+        @NSManaged var userId: String
         
         static func parseClassName() -> String {
             return "Service"
         }
         
+        func addService(category: String, overview: String, title: String, user: PFUser, completion: @escaping PFBooleanResultBlock){
+            let service = Service()
+            service.overview = overview
+            service.title = title
+            service.user = user
+            service.userId = user.objectId!
+            service.category = category
+            
+            service.saveInBackground(block: completion)
+        }
+        
+    }
+    
+    static func alert(Title: String, Message: String, viewController: UIViewController){
+        
+        let alertController = UIAlertController(title: Title, message: Message, preferredStyle: .alert)
+        
+        var okAction = UIAlertAction(title: "OK", style: .cancel) { (action) in
+            // handle case of user logging out
+        }
+        // add the logout action to the alert controller
+        alertController.addAction(okAction)
+        
+        viewController.present(alertController, animated: true) {
+            // optional code for what happens after the alert controller has finished presenting
+        }
+        
+        
+        
+        
         
     }
     
 }
+

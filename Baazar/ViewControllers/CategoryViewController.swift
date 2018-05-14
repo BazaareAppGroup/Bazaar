@@ -40,8 +40,9 @@ class CategoryViewController: UIViewController, UISearchBarDelegate, UITableView
     }
     
     func getCategories(){
-        let query = PFQuery(className: "Category")
+        let query = PFQuery(className: "Service")
         query.limit = 20
+        
         query.addAscendingOrder("items")
         query.findObjectsInBackground(block: {(categories: [PFObject]?, error: Error?) in
             if let categories = categories as? [Bazaar.Category]{

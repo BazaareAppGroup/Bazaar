@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Parse
+
+
 
 class SignUpViewController: UIViewController {
     
@@ -16,9 +19,11 @@ class SignUpViewController: UIViewController {
 
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -41,7 +46,7 @@ class SignUpViewController: UIViewController {
         
         if let username = username{
             if let password = password{
-                registerUser(username: username, password: password, photo: )// this is to be changed if parse sign in executes succesfully
+                registerUser(username: username, password: password, photo: image)// this is to be changed if parse sign in executes succesfully
             }else{
                 alert(Title: "", Message: "Need password")
             }
@@ -55,7 +60,7 @@ class SignUpViewController: UIViewController {
         
     }
     
-    func registerUser(username: String, password: String, photo: UIImage) -> Bool{
+    func registerUser(username: String, password: String, photo: UIImage?) -> Bool{
         var returnVal: Bool = false
         // initialize a user object
         let newUser = PFUser()
@@ -66,7 +71,7 @@ class SignUpViewController: UIViewController {
         newUser.username = username
         newUser.password = password
         
-        if let image = image{
+        if let image = photo{
             if let imageData = UIImagePNGRepresentation(image){
                 let file =  PFFile(name: "image.png", data: imageData)
                 newUser.add(file, forKey: "avatar")
