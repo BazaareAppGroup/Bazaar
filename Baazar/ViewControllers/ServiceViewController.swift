@@ -17,8 +17,7 @@ class ServiceViewController: UIViewController {
     
     var service : Bazaar.Service!{
         didSet{
-            serviceName.text = service.title
-            overview.text = service.overview
+            
         }
     }
 
@@ -26,6 +25,8 @@ class ServiceViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        serviceName.text = service.title
+        overview.text = service.overview
 
         // Do any additional setup after loading the view.
     }

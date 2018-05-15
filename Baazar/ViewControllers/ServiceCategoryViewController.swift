@@ -15,8 +15,6 @@ class ServiceCategoryViewController: UIViewController, UITableViewDelegate, UITa
     
     
     var services: [Bazaar.Service] = []
-    
-    var currentIndex : IndexPath?
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -67,9 +65,7 @@ class ServiceCategoryViewController: UIViewController, UITableViewDelegate, UITa
         }
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        currentIndex = indexPath
-    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -84,11 +80,12 @@ class ServiceCategoryViewController: UIViewController, UITableViewDelegate, UITa
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if(segue.identifier == "ServiceDetial"){
-            let vc = segue.destination as! ServiceViewController
-            vc.service = services[ currentIndex!.row]
-            
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell){
+            let vc = segue.destination as? ServiceViewController
+            vc?.service = services[ indexPath.row]
         }
+        
     }
     
 

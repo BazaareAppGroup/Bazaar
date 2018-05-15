@@ -13,6 +13,8 @@ extension PFUser{
     @NSManaged var screen_name : String
     @NSManaged var avatar: PFFile
     @NSManaged var stores: Int
+    
+    
 }
 
 class Bazaar {
@@ -96,6 +98,16 @@ class Bazaar {
             service.saveInBackground(block: completion)
         }
         
+    }
+    
+    static func PFFileFromImage(image: UIImage) -> PFFile?{
+        
+        if let imageData = UIImagePNGRepresentation(image){
+            let file =  PFFile(name: "image.png", data: imageData)
+            return file!
+            
+        }
+        return nil
     }
     
     static func alert(Title: String, Message: String, viewController: UIViewController){

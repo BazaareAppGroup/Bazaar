@@ -52,10 +52,19 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let image = info[UIImagePickerControllerEditedImage] as! UIImage
+        
         UserImageView.image = image
-        let user = PFUser.current()!
         
-        
+            let user = PFUser.current()!
+         user.avatar = Bazaar.PFFileFromImage(image: image)!
+        user.saveInBackground{
+            (state: Bool?, error: Error?) in
+            if let state = state{
+                print("user image uploaded")
+            }else{
+                print(error?.localizedDescription)
+            }
+        }
         dismiss(animated: true, completion: nil)
     }
     
@@ -66,7 +75,11 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         UsernameLabel.text = user.username
         getServices()
         tableView.dataSource = self
-        
+        do{
+            try UserImageView.image = UIImage(data: user.avatar.getData())
+        }catch{
+            
+        }
         
     }
 

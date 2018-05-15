@@ -27,6 +27,8 @@
 		20FA9C8D628B415C29B63C5E /* Pods_BaazarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AAE43BF0742771538D28A8 /* Pods_BaazarTests.framework */; };
 		6527AC1C2F7A5199506820A6 /* Pods_Baazar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9569AB772AF61CBEAD662238 /* Pods_Baazar.framework */; };
 		BD4036CF20A69C8300F98BBD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4036CE20A69C8300F98BBD /* SignUpViewController.swift */; };
+		BD4036D120AA522200F98BBD /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4036D020AA522200F98BBD /* ChatViewController.swift */; };
+		BD4036D320AA526300F98BBD /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4036D220AA526300F98BBD /* MessageCell.swift */; };
 		BDE40246209A59EA00A73DDD /* Bazaar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE40245209A59EA00A73DDD /* Bazaar.swift */; };
 		ED07E2B919BF35F25B1CB079 /* Pods_BaazarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB75DF72921815D04D315C43 /* Pods_BaazarUITests.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +82,8 @@
 		A1AAE43BF0742771538D28A8 /* Pods_BaazarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaazarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E1AFFCB0B74DC8B4A1294E /* Pods-BaazarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaazarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaazarUITests/Pods-BaazarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BD4036CE20A69C8300F98BBD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BD4036D020AA522200F98BBD /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		BD4036D220AA526300F98BBD /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		BDE40245209A59EA00A73DDD /* Bazaar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bazaar.swift; sourceTree = "<group>"; };
 		CB75DF72921815D04D315C43 /* Pods_BaazarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaazarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5FBA082BB8EB13FA558785F /* Pods-BaazarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaazarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaazarUITests/Pods-BaazarUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 				1BB3172C209125F0006121F3 /* CategoryViewController.swift */,
 				1BB3174420A11346006121F3 /* ServiceCategoryViewController.swift */,
 				1BB3174820A117AB006121F3 /* ServiceViewController.swift */,
+				BD4036D020AA522200F98BBD /* ChatViewController.swift */,
 				1BB3174C20A12A04006121F3 /* ProfileViewController.swift */,
 				1BB3175020A13432006121F3 /* AddStoreViewController.swift */,
 				1BB3175220A135DE006121F3 /* AddServicesViewController.swift */,
@@ -197,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				1BB31730209129AD006121F3 /* CategoryTableViewCell.swift */,
+				BD4036D220AA526300F98BBD /* MessageCell.swift */,
 				1BB3174620A11451006121F3 /* ServiceTableViewCell.swift */,
 				1BB3174E20A12B51006121F3 /* ProfileTableViewCell.swift */,
 				1BB3175620A1396E006121F3 /* StoreServiceTableViewCell.swift */,
@@ -494,11 +500,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Baazar/Pods-Baazar-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/NoChat/NoChat.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NoChat.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD4036CF20A69C8300F98BBD /* SignUpViewController.swift in Sources */,
+				BD4036D320AA526300F98BBD /* MessageCell.swift in Sources */,
 				BDE40246209A59EA00A73DDD /* Bazaar.swift in Sources */,
 				1BB3172D209125F0006121F3 /* CategoryViewController.swift in Sources */,
 				1BB3174520A11346006121F3 /* ServiceCategoryViewController.swift in Sources */,
@@ -526,6 +535,7 @@
 				1BB3174D20A12A04006121F3 /* ProfileViewController.swift in Sources */,
 				1BB3174920A117AB006121F3 /* ServiceViewController.swift in Sources */,
 				1BB3175320A135DE006121F3 /* AddServicesViewController.swift in Sources */,
+				BD4036D120AA522200F98BBD /* ChatViewController.swift in Sources */,
 				1BB3174720A11451006121F3 /* ServiceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

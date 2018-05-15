@@ -19,21 +19,38 @@ class SignUpViewController: UIViewController {
 
     @IBOutlet weak var passwordField: UITextField!
     
+    var isSeller: Bool = false
+    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator.hidesWhenStopped = true
+        
         
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var cancelClick: UIButton!
+ 
     
-    @IBOutlet weak var register: UIButton!
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func setProfile(_ sender: UISegmentedControl) {
+        if(sender.selectedSegmentIndex == 0){
+            isSeller = true
+        }else{
+            isSeller = false
+        }
+    }
+    
+    @IBAction func cancelButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "cancelSegue", sender: nil)
     }
     
     @IBAction func SignUpClicked(_ sender: AnyObject) {
@@ -71,13 +88,8 @@ class SignUpViewController: UIViewController {
         newUser.username = username
         newUser.password = password
         
-        if let image = photo{
-            if let imageData = UIImagePNGRepresentation(image){
-                let file =  PFFile(name: "image.png", data: imageData)
-                newUser.add(file, forKey: "avatar")
-                
-            }
-        }
+        
+        
         
         
         
@@ -94,8 +106,24 @@ class SignUpViewController: UIViewController {
             } else {
                 print("User Registered successfully")
                 // manually segue to logged in view
+                if let image = photo{
+                    if let imageData = UIImagePNGRepresentation(image){
+                        let file =  PFFile(name: "image.png", data: imageData)
+                        newUser["avatar"] = file!
+                        newUser["isSeller"] = self.isSeller
+                        newUser.saveInBackground{
+                            (state: Bool?, error: Error?) in
+                            if let state = state{
+                                print("profile added")
+                            }else{
+                                print(error?.localizedDescription)
+                            }
+                        }
+                        
+                    }
+                }
                 self.activityIndicator.stopAnimating()
-                self.performSegue(withIdentifier: "loginSuccess" , sender: self)
+                self.performSegue(withIdentifier: "registerSegue" , sender: self)
                 returnVal = true
             }
         }
